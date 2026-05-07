@@ -6,7 +6,7 @@
 'use strict';
 
 /* ── Helpers ─────────────────────────────────────────────── */
-const qs  = (s, p = document) => p.querySelector(s);
+const qs = (s, p = document) => p.querySelector(s);
 const qsa = (s, p = document) => [...p.querySelectorAll(s)];
 
 /* ============================================================ */
@@ -55,7 +55,7 @@ function initRTL() {
 
 function toggleRTL() {
   const isRTL = document.documentElement.getAttribute('dir') === 'rtl';
-  const next  = !isRTL;
+  const next = !isRTL;
   document.documentElement.setAttribute('dir', next ? 'rtl' : 'ltr');
   localStorage.setItem(RTL_KEY, next);
   updateRTLBtns(next);
@@ -66,7 +66,7 @@ function updateRTLBtns(isRTL) {
     btn.setAttribute('aria-label', isRTL ? 'Switch to LTR' : 'Switch to RTL');
     btn.title = isRTL ? 'LTR Mode' : 'RTL Mode';
     const icon = btn.querySelector('i');
-    if (icon) icon.className = isRTL ? 'bi bi-type-bold' : 'bi bi-justify-right';
+    if (icon) icon.className = isRTL ? 'bi bi-arrow-right' : 'bi bi-arrow-left-right';
   });
 }
 
@@ -90,7 +90,7 @@ function initNavbar() {
 
   // Active link highlight
   const links = qsa('.nav-link-rr[data-page]');
-  const page  = window.location.pathname.split('/').pop() || 'index.html';
+  const page = window.location.pathname.split('/').pop() || 'index.html';
   links.forEach(l => {
     if (l.getAttribute('data-page') === page) l.classList.add('active');
   });
@@ -101,9 +101,9 @@ function initNavbar() {
 /* ============================================================ */
 function initOffcanvas() {
   const togglerBtn = qs('.hamburger');
-  const offcanvas   = qs('.offcanvas-rr');
-  const overlay     = qs('.offcanvas-overlay');
-  const closeBtn    = qs('.offcanvas-close');
+  const offcanvas = qs('.offcanvas-rr');
+  const overlay = qs('.offcanvas-overlay');
+  const closeBtn = qs('.offcanvas-close');
 
   if (!togglerBtn || !offcanvas) return;
 
@@ -123,7 +123,7 @@ function initOffcanvas() {
 
   togglerBtn.addEventListener('click', open);
   closeBtn && closeBtn.addEventListener('click', close);
-  overlay  && overlay.addEventListener('click', close);
+  overlay && overlay.addEventListener('click', close);
 
   // Close on mobile link click
   qsa('.mobile-nav-link').forEach(l => l.addEventListener('click', close));
@@ -223,8 +223,8 @@ function initParallax() {
 /* ============================================================ */
 function initGallery() {
   // Filtering
-  const pills  = qsa('.filter-pill');
-  const items  = qsa('.gallery-item');
+  const pills = qsa('.filter-pill');
+  const items = qsa('.gallery-item');
 
   pills.forEach(pill => {
     pill.addEventListener('click', () => {
@@ -243,8 +243,8 @@ function initGallery() {
 
   // Lightbox
   const lightbox = qs('.lightbox');
-  const lbImg    = lightbox && lightbox.querySelector('img');
-  const lbClose  = lightbox && lightbox.querySelector('.lightbox-close');
+  const lbImg = lightbox && lightbox.querySelector('img');
+  const lbClose = lightbox && lightbox.querySelector('.lightbox-close');
 
   items.forEach(item => {
     item.addEventListener('click', () => {
@@ -339,7 +339,7 @@ function initBookingForm() {
 
   // Pricing summary update
   const rentalType = form.querySelector('[name="rentalType"]');
-  const summaryEl  = qs('#priceSummary');
+  const summaryEl = qs('#priceSummary');
   const prices = {
     'single-kayak': 35,
     'tandem-kayak': 55,
@@ -392,8 +392,8 @@ function initContactForm() {
 function initAuthForms() {
   // Password strength meter
   const pwdInput = qs('#password');
-  const bar      = qs('.pwd-strength-bar');
-  const msg      = qs('#pwdMsg');
+  const bar = qs('.pwd-strength-bar');
+  const msg = qs('#pwdMsg');
 
   if (pwdInput && bar) {
     pwdInput.addEventListener('input', () => {
@@ -404,8 +404,8 @@ function initAuthForms() {
       if (/[0-9]/.test(v)) strength++;
       if (/[^A-Za-z0-9]/.test(v)) strength++;
 
-      const colors = ['#ef4444','#f97316','#eab308','#22c55e'];
-      const labels = ['Weak','Fair','Good','Strong'];
+      const colors = ['#ef4444', '#f97316', '#eab308', '#22c55e'];
+      const labels = ['Weak', 'Fair', 'Good', 'Strong'];
       bar.style.width = `${strength * 25}%`;
       bar.style.background = colors[strength - 1] || '#e5e7eb';
       if (msg) msg.textContent = strength > 0 ? labels[strength - 1] : '';
@@ -480,10 +480,10 @@ function initCountdown() {
     const h = Math.floor((diff % 86400000) / 3600000);
     const m = Math.floor((diff % 3600000) / 60000);
     const s = Math.floor((diff % 60000) / 1000);
-    if (dEl) dEl.textContent = String(d).padStart(2,'0');
-    if (hEl) hEl.textContent = String(h).padStart(2,'0');
-    if (mEl) mEl.textContent = String(m).padStart(2,'0');
-    if (sEl) sEl.textContent = String(s).padStart(2,'0');
+    if (dEl) dEl.textContent = String(d).padStart(2, '0');
+    if (hEl) hEl.textContent = String(h).padStart(2, '0');
+    if (mEl) mEl.textContent = String(m).padStart(2, '0');
+    if (sEl) sEl.textContent = String(s).padStart(2, '0');
   }
   tick();
   setInterval(tick, 1000);
@@ -512,7 +512,7 @@ function initNewsletter() {
     form.addEventListener('submit', e => {
       e.preventDefault();
       const input = form.querySelector('input');
-      const btn   = form.querySelector('button');
+      const btn = form.querySelector('button');
       if (!input || !input.value) return;
       if (btn) { btn.textContent = '✓ Subscribed!'; btn.style.background = '#16a34a'; }
       setTimeout(() => {
@@ -564,7 +564,7 @@ function initBlogFilter() {
 /* ============================================================ */
 function initWaiverGuard() {
   const waiverCheck = qs('#waiverCheck');
-  const submitBtn   = qs('#bookSubmitBtn');
+  const submitBtn = qs('#bookSubmitBtn');
 
   if (!waiverCheck || !submitBtn) return;
 

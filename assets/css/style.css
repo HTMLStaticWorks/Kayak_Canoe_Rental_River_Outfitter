@@ -268,6 +268,8 @@ ul {
 .btn-outline-rr {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: row;
     gap: 8px;
     background: transparent;
     color: var(--primary);
@@ -279,6 +281,7 @@ ul {
     border: 2px solid var(--primary);
     cursor: pointer;
     transition: var(--trans);
+    white-space: nowrap;
 }
 
 .btn-outline-rr:hover {
@@ -286,6 +289,7 @@ ul {
     color: #fff;
     transform: translateY(-3px);
 }
+
 
 .btn-ghost-rr {
     display: inline-flex;
@@ -986,6 +990,20 @@ ul {
     margin-bottom: 1.2rem;
 }
 
+.service-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 1.5rem;
+    display: inline-block;
+    text-align: left;
+}
+
+.service-card ul li {
+    margin-bottom: 6px;
+    color: var(--text-muted);
+    font-size: .88rem;
+}
+
 /* Ripple hover effect */
 .ripple-btn {
     position: relative;
@@ -1290,6 +1308,9 @@ ul {
     overflow: hidden;
     box-shadow: var(--shadow);
     transition: var(--trans);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .blog-card:hover {
@@ -1343,6 +1364,9 @@ ul {
 
 .blog-card-body {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .blog-card-body h5 {
@@ -1364,7 +1388,8 @@ ul {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    margin-top: 1rem;
+    margin-top: auto;
+    padding-top: 1rem;
     transition: var(--trans);
 }
 
@@ -1898,13 +1923,13 @@ ul {
    ============================================================ */
 .timeline {
     position: relative;
-    padding-left: 40px;
+    padding-left: 55px;
 }
 
 .timeline::before {
     content: '';
     position: absolute;
-    left: 16px;
+    left: 28px;
     top: 0;
     bottom: 0;
     width: 2px;
@@ -1913,12 +1938,12 @@ ul {
 
 [dir="rtl"] .timeline {
     padding-left: 0;
-    padding-right: 40px;
+    padding-right: 55px;
 }
 
 [dir="rtl"] .timeline::before {
     left: auto;
-    right: 16px;
+    right: 28px;
 }
 
 .timeline-item {
@@ -1928,7 +1953,7 @@ ul {
 
 .timeline-dot {
     position: absolute;
-    left: -32px;
+    left: -43px;
     top: 4px;
     width: 32px;
     height: 32px;
@@ -1946,7 +1971,7 @@ ul {
 
 [dir="rtl"] .timeline-dot {
     left: auto;
-    right: -32px;
+    right: -43px;
 }
 
 .timeline-body {
@@ -2392,6 +2417,35 @@ ul {
 .auth-footer {
     color: rgba(255, 255, 255, .6);
     font-size: .85rem;
+}
+
+/* Auth social buttons — keep icon + text always inline, never wrap */
+.auth-card .d-flex.flex-row .btn-outline-rr {
+    flex-direction: row !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    white-space: nowrap !important;
+    min-width: 0;
+    overflow: hidden;
+    gap: 6px;
+    padding: 10px 8px !important;
+    font-size: .82rem !important;
+}
+
+.auth-card .d-flex.flex-row .btn-outline-rr svg,
+.auth-card .d-flex.flex-row .btn-outline-rr i {
+    flex-shrink: 0;
+}
+
+/* On very small screens, hide the text & show icon only */
+@media (max-width: 380px) {
+    .auth-card .d-flex.flex-row .btn-outline-rr span {
+        display: none;
+    }
+
+    .auth-card .d-flex.flex-row .btn-outline-rr {
+        padding: 10px !important;
+    }
 }
 
 /* Password strength bar */
