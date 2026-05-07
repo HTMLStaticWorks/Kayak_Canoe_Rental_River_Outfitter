@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adventure Blog — AquaGo | River Tips, Gear & Stories</title>
+    <meta name="description"
+        content="Read the AquaGo blog for kayaking tips, canoe guides, family river adventures, safety tutorials and seasonal river conditions in the Pacific Northwest." />
+    <meta property="og:title" content="Adventure Blog — AquaGo" />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://riverrunoutfitters.com/blog.html" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar-rr" role="navigation" aria-label="Main navigation" id="mainNav">
+        <div class="container d-flex align-items-center justify-content-between gap-3">
+            <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none">
+                <span class="nav-logo-icon">🌊</span>
+                <span class="nav-logo-text">Aqua<span>Go</span></span>
+            </a>
+            <ul id="desktopNavLinks" class="d-flex align-items-center list-unstyled mb-0 gap-1 flex-nowrap">
+                <li><a href="index.html" class="nav-link-rr" data-page="index.html">Home</a></li>
+                <li><a href="home-2.html" class="nav-link-rr" data-page="home-2.html">Home 2</a></li>
+                <li><a href="about.html" class="nav-link-rr" data-page="about.html">About</a></li>
+                <li><a href="services.html" class="nav-link-rr" data-page="services.html">Rentals</a></li>
+                <li><a href="gallery.html" class="nav-link-rr" data-page="gallery.html">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link-rr active" data-page="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="nav-link-rr" data-page="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="btn-toggle theme-toggle-btn" aria-label="Toggle dark mode"><i
+                        class="bi bi-moon-fill"></i></button>
+                <button class="btn-toggle rtl-toggle-btn" aria-label="Toggle RTL"><i
+                        class="bi bi-justify-right"></i></button>
+                <a href="register.html" class="btn-book-nav d-none d-lg-inline-flex"><i class="bi bi-person-plus"></i>
+                    Sign Up</a>
+                <button class="hamburger" aria-label="Open menu" aria-expanded="false"><i
+                        class="bi bi-list"></i></button>
+            </div>
+        </div>
+    </nav>
+    <div class="offcanvas-overlay"></div>
+    <aside class="offcanvas-rr" aria-label="Mobile navigation">
+        <button class="offcanvas-close" aria-label="Close menu"><i class="bi bi-x-lg"></i></button>
+        <div class="d-flex align-items-center gap-2 mb-4 mt-2"><span style="font-size:1.5rem;">🌊</span><span
+                class="nav-logo-text" style="color:var(--text);">Aqua<span>Go</span></span></div>
+        <div class="mobile-nav-divider"></div><ul class="list-unstyled">
+            <li><a href="index.html" class="mobile-nav-link" data-page="index.html"><i
+                        class="bi bi-house-fill text-primary-rr"></i> Home</a></li>
+            <li><a href="home-2.html" class="mobile-nav-link" data-page="home-2.html"><i
+                        class="bi bi-house-door text-primary-rr"></i> Home 2</a></li>
+            <li><a href="about.html" class="mobile-nav-link" data-page="about.html"><i
+                        class="bi bi-people text-primary-rr"></i> About</a></li>
+            <li><a href="services.html" class="mobile-nav-link" data-page="services.html"><i
+                        class="bi bi-water text-primary-rr"></i> Rentals</a></li>
+            <li><a href="gallery.html" class="mobile-nav-link"><i class="bi bi-images text-primary-rr"></i> Gallery</a>
+            </li>
+            <li><a href="blog.html" class="mobile-nav-link active"><i class="bi bi-newspaper text-primary-rr"></i>
+                    Blog</a></li>
+            <li><a href="contact.html" class="mobile-nav-link"><i class="bi bi-envelope text-primary-rr"></i>
+                    Contact</a></li>
+        </ul>
+        <div class="mobile-nav-divider"></div>
+        <a href="register.html" class="btn-primary-rr w-100 justify-content-center mb-3"><i
+                class="bi bi-person-plus"></i> Sign Up</a>
+        <div class="mobile-menu-controls d-flex gap-2 mb-3">
+            <button class="btn-toggle theme-toggle-btn" aria-label="Toggle dark mode">
+                <i class="bi bi-moon-fill"></i>
+            </button>
+            <button class="btn-toggle rtl-toggle-btn" aria-label="Toggle RTL" title="RTL Mode">
+                <i class="bi bi-justify-right"></i>
+            </button>
+        </div>
+    </aside>
+
+    <!-- FEATURED ARTICLE HERO -->
+    <section class="page-hero"
+        style="background-image:url('https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1920&q=80');"
+        aria-label="Blog page hero">
+        <div class="container page-hero-content">
+            <span class="section-tag" style="background:rgba(255,255,255,.15);color:#fff;margin-bottom:1rem;"><i
+                    class="bi bi-newspaper"></i> Our Journal</span>
+            <h1 class="page-hero-title">River News & Updates</h1>
+            <nav class="breadcrumb-rr" aria-label="Breadcrumb">
+                <a href="index.html">Home</a><span class="breadcrumb-sep">›</span><span>Blog</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- BLOG CONTENT -->
+    <section class="section-pad" aria-label="Blog articles">
+        <div class="container">
+
+            <!-- Search + Filter -->
+            <div class="row g-3 mb-5 reveal">
+                <div class="col-md-6">
+                    <div style="position:relative;">
+                        <i class="bi bi-search"
+                            style="position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--text-muted);"></i>
+                        <input type="search" id="blogSearch" class="form-control-rr" placeholder="Search articles…"
+                            style="padding-left:44px;" aria-label="Search blog posts">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex gap-2 flex-wrap">
+                        <button class="filter-pill blog-filter-pill active" data-cat="all">All</button>
+                        <button class="filter-pill blog-filter-pill" data-cat="safety">Safety</button>
+                        <button class="filter-pill blog-filter-pill" data-cat="beginner">Beginner</button>
+                        <button class="filter-pill blog-filter-pill" data-cat="gear">Gear</button>
+                        <button class="filter-pill blog-filter-pill" data-cat="family">Family</button>
+                        <button class="filter-pill blog-filter-pill" data-cat="seasonal">Seasonal</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 reveal" data-cat="beginner">
+                    <article class="blog-card" data-cat="beginner">
+                        <div class="blog-card-img">
+                            <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&q=75"
+                                alt="Beginner kayaking guide">
+                            <span class="blog-cat-badge">Beginner</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <div class="blog-meta">
+                                <span><i class="bi bi-person"></i> Marcus Webb</span>
+                                <span><i class="bi bi-calendar3"></i> May 1, 2026</span>
+                                <span><i class="bi bi-clock"></i> 8 min</span>
+                            </div>
+                            <h5>10 Essential Kayaking Tips for First-Time Paddlers</h5>
+                            <p>Master the basics before you hit the water. From paddle grip to reading current, here's
+                                everything beginners need to know.</p>
+                            <a href="blog-details.html" class="blog-read-more">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 reveal" style="transition-delay:.1s" data-cat="safety">
+                    <article class="blog-card" data-cat="safety">
+                        <div class="blog-card-img">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=75"
+                                alt="River safety whitewater">
+                            <span class="blog-cat-badge">Safety</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <div class="blog-meta">
+                                <span><i class="bi bi-person"></i> Elena Sorensen</span>
+                                <span><i class="bi bi-calendar3"></i> Apr 22, 2026</span>
+                                <span><i class="bi bi-clock"></i> 6 min</span>
+                            </div>
+                            <h5>River Safety Rules That Could Save Your Life</h5>
+                            <p>Experienced paddlers know: safety on the river is never optional. Learn the 10 rules
+                                every paddler should memorize before floating.</p>
+                            <a href="blog-details.html" class="blog-read-more">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 reveal" style="transition-delay:.2s" data-cat="gear">
+                    <article class="blog-card" data-cat="gear">
+                        <div class="blog-card-img">
+                            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=75"
+                                alt="Best kayaking gear 2026">
+                            <span class="blog-cat-badge">Gear</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <div class="blog-meta">
+                                <span><i class="bi bi-person"></i> Jake Torres</span>
+                                <span><i class="bi bi-calendar3"></i> Apr 15, 2026</span>
+                                <span><i class="bi bi-clock"></i> 10 min</span>
+                            </div>
+                            <h5>Best Kayaking Gear of 2026 — What Our Guides Actually Use</h5>
+                            <p>After testing dozens of products on Oregon rivers, our guide team reveals the gear they
+                                trust for every paddle.</p>
+                            <a href="blog-details.html" class="blog-read-more">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 reveal" data-cat="family">
+                    <article class="blog-card" data-cat="family">
+                        <div class="blog-card-img">
+                            <img src="https://images.unsplash.com/photo-1472745942893-4b9f730c7668?w=600&q=75"
+                                alt="Family river trip with kids">
+                            <span class="blog-cat-badge">Family</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <div class="blog-meta">
+                                <span><i class="bi bi-person"></i> Priya Nair</span>
+                                <span><i class="bi bi-calendar3"></i> Apr 8, 2026</span>
+                                <span><i class="bi bi-clock"></i> 7 min</span>
+                            </div>
+                            <h5>Planning the Perfect Family River Trip with Kids</h5>
+                            <p>Get the whole family on the water safely. Age-appropriate routes, packing tips, and how
+                                to keep kids engaged and excited.</p>
+                            <a href="blog-details.html" class="blog-read-more">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 reveal" style="transition-delay:.1s" data-cat="seasonal">
+                    <article class="blog-card" data-cat="seasonal">
+                        <div class="blog-card-img">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=75"
+                                alt="Summer river paddling Oregon">
+                            <span class="blog-cat-badge">Seasonal</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <div class="blog-meta">
+                                <span><i class="bi bi-person"></i> Marcus Webb</span>
+                                <span><i class="bi bi-calendar3"></i> Apr 1, 2026</span>
+                                <span><i class="bi bi-clock"></i> 5 min</span>
+                            </div>
+                            <h5>Summer 2026 River Conditions — Oregon Paddling Forecast</h5>
+                            <p>Snowpack levels, flow predictions and which routes are running best this season. Plan
+                                your summer paddle with confidence.</p>
+                            <a href="blog-details.html" class="blog-read-more">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6 reveal" style="transition-delay:.2s" data-cat="beginner">
+                    <article class="blog-card" data-cat="beginner">
+                        <div class="blog-card-img">
+                            <img src="https://images.unsplash.com/photo-1499336315816-097655dcfbda?w=600&q=75"
+                                alt="How to paddle a canoe">
+                            <span class="blog-cat-badge">Beginner</span>
+                        </div>
+                        <div class="blog-card-body">
+                            <div class="blog-meta">
+                                <span><i class="bi bi-person"></i> Elena Sorensen</span>
+                                <span><i class="bi bi-calendar3"></i> Mar 24, 2026</span>
+                                <span><i class="bi bi-clock"></i> 9 min</span>
+                            </div>
+                            <h5>Kayak vs. Canoe — Which Is Right for You?</h5>
+                            <p>Sit-in or sit-on-top? Single or tandem? We break down the differences so you can choose
+                                the perfect boat for your next adventure.</p>
+                            <a href="blog-details.html" class="blog-read-more">Read More <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav class="d-flex justify-content-center mt-5 reveal" aria-label="Blog pagination">
+                <div class="d-flex gap-2">
+                    <a href="#"
+                        style="width:40px;height:40px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;"
+                        aria-current="page" aria-label="Page 1">1</a>
+                    <a href="#"
+                        style="width:40px;height:40px;border-radius:50%;background:var(--bg-card);border:1.5px solid var(--border);color:var(--text-muted);display:flex;align-items:center;justify-content:center;"
+                        aria-label="Page 2">2</a>
+                    <a href="#"
+                        style="width:40px;height:40px;border-radius:50%;background:var(--bg-card);border:1.5px solid var(--border);color:var(--text-muted);display:flex;align-items:center;justify-content:center;"
+                        aria-label="Page 3">3</a>
+                    <a href="#"
+                        style="width:40px;height:40px;border-radius:50%;background:var(--bg-card);border:1.5px solid var(--border);color:var(--text-muted);display:flex;align-items:center;justify-content:center;"
+                        aria-label="Next page"><i class="bi bi-chevron-right"></i></a>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <!-- UNIQUE SECTION 1: TOP CONTRIBUTORS -->
+    <section class="section-pad bg-alt" aria-label="Our Blog Contributors">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <span class="section-tag"><i class="bi bi-people"></i> Meet the Experts</span>
+                <h2 class="section-title">The Voices Behind the Paddle</h2>
+                <p class="section-sub">Our articles are written by the same certified guides who lead our tours every
+                    day.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-3 col-md-6 reveal">
+                    <div class="card-rr p-4 text-center h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80" alt="Marcus"
+                            style="width:100px;height:100px;border-radius:50%;object-fit:cover;margin:0 auto 1.2rem;border:3px solid var(--primary);">
+                        <h5 style="font-weight:700;margin-bottom:.4rem;">Marcus Webb</h5>
+                        <div
+                            style="font-size:.8rem;color:var(--accent);font-weight:700;text-transform:uppercase;margin-bottom:1rem;">
+                            Safety & Exploration</div>
+                        <p style="font-size:.85rem;color:var(--text-muted);">Specializing in river mechanics and
+                            whitewater safety with over 15 years on the water.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 reveal" style="transition-delay:.1s">
+                    <div class="card-rr p-4 text-center h-100 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80" alt="Elena"
+                            style="width:100px;height:100px;border-radius:50%;object-fit:cover;margin:0 auto 1.2rem;border:3px solid var(--primary);">
+                        <h5 style="font-weight:700;margin-bottom:.4rem;">Elena Sorensen</h5>
+                        <div
+                            style="font-size:.8rem;color:var(--accent);font-weight:700;text-transform:uppercase;margin-bottom:1rem;">
+                            Nature & Ecology</div>
+                        <p style="font-size:.85rem;color:var(--text-muted);">A certified river naturalist passionate
+                            about the Pacific Northwest's unique ecosystems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UNIQUE SECTION 2: GUIDE HUB -->
+    <section class="section-pad" aria-label="Blog Knowledge Hub">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 reveal-left">
+                    <div class="p-5" style="background:var(--grad-primary);border-radius:var(--radius-xl);color:#fff;">
+                        <span style="font-size:2.5rem;display:block;margin-bottom:1.5rem;">💡</span>
+                        <h2 style="font-weight:800;margin-bottom:1.2rem;color:#fff;">The Quick-Start Hub</h2>
+                        <p style="opacity:.9;margin-bottom:2rem;">New to paddling? We've distilled our most critical
+                            blog topics into these fast-loading digital field guides.</p>
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-center gap-3 mb-3">
+                                <div
+                                    style="width:40px;height:40px;background:rgba(255,255,255,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <span>Basic Water Rescue PDF</span>
+                            </li>
+                            <li class="d-flex align-items-center gap-3 mb-3">
+                                <div
+                                    style="width:40px;height:40px;background:rgba(255,255,255,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;">
+                                    <i class="bi bi-map"></i>
+                                </div>
+                                <span>Route Map Legend</span>
+                            </li>
+                            <li class="d-flex align-items-center gap-3">
+                                <div
+                                    style="width:40px;height:40px;background:rgba(255,255,255,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;">
+                                    <i class="bi bi-backpack"></i>
+                                </div>
+                                <span>Day-Trip Gear Checklist</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 reveal-right">
+                    <span class="section-tag"><i class="bi bi-collection"></i> Categories</span>
+                    <h2 class="section-title text-start">Explore by Interest</h2>
+                    <p class="mb-4" style="color:var(--text-muted);">Deep dive into our specific archives to find
+                        exactly the information you need for your next river outing.</p>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <a href="#" class="card-rr p-3 text-center text-decoration-none" style="display:block;">
+                                <i class="bi bi-water d-block mb-2 fs-3 text-primary-rr"></i>
+                                <span style="font-weight:700;color:var(--text);">Safety</span>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="card-rr p-3 text-center text-decoration-none" style="display:block;">
+                                <i class="bi bi-tools d-block mb-2 fs-3 text-primary-rr"></i>
+                                <span style="font-weight:700;color:var(--text);">Gear</span>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="card-rr p-3 text-center text-decoration-none" style="display:block;">
+                                <i class="bi bi-people d-block mb-2 fs-3 text-primary-rr"></i>
+                                <span style="font-weight:700;color:var(--text);">Family</span>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#" class="card-rr p-3 text-center text-decoration-none" style="display:block;">
+                                <i class="bi bi-tree d-block mb-2 fs-3 text-primary-rr"></i>
+                                <span style="font-weight:700;color:var(--text);">Ecology</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-rr" role="contentinfo">
+        <!-- Wave top -->
+        <div style="line-height:0;background:var(--bg-alt);">
+            <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                style="display:block;">
+                <path d="M0,30 C480,60 960,0 1440,30 L1440,60 L0,60 Z" fill="#071d2b" />
+            </svg>
+        </div>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-5">
+                    <!-- Col 1: Brand -->
+                    <div class="col-lg-3 col-md-6">
+                        <a href="index.html" class="d-flex align-items-center gap-2 mb-3 text-decoration-none">
+                            <span class="footer-logo-icon">🌊</span>
+                            <span class="footer-logo-text">Aqua<span>Go</span></span>
+                        </a>
+                        <p class="footer-desc">Your trusted river adventure partner since 2009. Premium kayak &amp;
+                            canoe rentals, guided trips and unforgettable river experiences in the Pacific Northwest.
+                        </p>
+                        <div class="social-links mt-4">
+                            <a href="#" class="social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                            <a href="#" class="social-btn" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <!-- Col 2: Quick Links -->
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <h6 class="footer-col-title">Quick Links</h6>
+                        <ul>
+                            <li><a href="index.html" class="footer-link"><i class="bi bi-chevron-right"></i>Home</a>
+                            </li>
+                            <li><a href="about.html" class="footer-link"><i class="bi bi-chevron-right"></i>About Us</a>
+                            </li>
+                            <li><a href="gallery.html" class="footer-link"><i
+                                        class="bi bi-chevron-right"></i>Gallery</a></li>
+                            <li><a href="blog.html" class="footer-link"><i class="bi bi-chevron-right"></i>Blog</a></li>
+                            <li><a href="contact.html" class="footer-link"><i
+                                        class="bi bi-chevron-right"></i>Contact</a></li>
+                            <li><a href="login.html" class="footer-link"><i class="bi bi-chevron-right"></i>Member
+                                    Login</a></li>
+                        </ul>
+                    </div>
+                    <!-- Col 3: Services -->
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <h6 class="footer-col-title">Adventure Services</h6>
+                        <ul>
+                            <li><a href="services.html" class="footer-link"><i class="bi bi-water"></i>Single Kayak
+                                    Rental</a></li>
+                            <li><a href="services.html" class="footer-link"><i class="bi bi-people"></i>Tandem Kayak
+                                    Rental</a></li>
+                            <li><a href="services.html" class="footer-link"><i class="bi bi-tsunami"></i>Canoe
+                                    Rental</a></li>
+                            <li><a href="services.html" class="footer-link"><i class="bi bi-map"></i>Guided River
+                                    Tours</a></li>
+                            <li><a href="services.html" class="footer-link"><i class="bi bi-bus-front"></i>Shuttle
+                                    Services</a></li>
+                            <li><a href="services.html" class="footer-link"><i class="bi bi-shield-check"></i>Safety
+                                    Gear Rental</a></li>
+                            <li><a href="booking.html" class="footer-link"><i class="bi bi-file-earmark-text"></i>Online
+                                    Waiver</a></li>
+                        </ul>
+                    </div>
+                    <!-- Col 4: Newsletter -->
+                    <div class="col-lg-4 col-md-6">
+                        <h6 class="footer-col-title">River Updates</h6>
+                        <p style="font-size:.9rem;margin-bottom:1rem;">Get seasonal river conditions, trip deals and
+                            adventure inspiration delivered to your inbox.</p>
+                        <form class="newsletter-form" aria-label="Newsletter subscription">
+                            <input type="email" class="newsletter-input" placeholder="Enter your email"
+                                aria-label="Email address" required>
+                            <button class="newsletter-btn" type="submit" aria-label="Subscribe">Subscribe</button>
+                        </form>
+                        <div class="mt-4">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <i class="bi bi-geo-alt-fill" style="color:var(--accent);"></i>
+                                <span style="font-size:.88rem;">1 Riverbank Way, Maplewood, OR 97401</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <i class="bi bi-telephone-fill" style="color:var(--accent);"></i>
+                                <a href="tel:+15557483001" style="font-size:.88rem;color:rgba(255,255,255,.65);">(555)
+                                    748-3001</a>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-envelope-fill" style="color:var(--accent);"></i>
+                                <a href="mailto:hello@riverrunoutfitters.com"
+                                    style="font-size:.88rem;color:rgba(255,255,255,.65);">hello@riverrunoutfitters.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+                <p class="mb-0">© 2026 AquaGo. All rights reserved. | <a href="#"
+                        style="color:rgba(255,255,255,.55);">Privacy Policy</a> | <a href="#"
+                        style="color:rgba(255,255,255,.55);">Terms</a></p>
+                <p class="mb-0">Crafted with ❤️ for River Adventurers</p>
+            </div>
+        </div>
+    </footer>
+    <button id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+

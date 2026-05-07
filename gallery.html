@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adventure Gallery — AquaGo | Kayak & Canoe Photos</title>
+    <meta name="description"
+        content="Browse the AquaGo photo gallery — river kayaking, canoe adventures, guided tours, wildlife moments, camping and stunning Pacific Northwest scenery." />
+    <meta property="og:title" content="Adventure Gallery — AquaGo" />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://riverrunoutfitters.com/gallery.html" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar-rr" role="navigation" aria-label="Main navigation" id="mainNav">
+        <div class="container d-flex align-items-center justify-content-between gap-3">
+            <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none">
+                <span class="nav-logo-icon">🌊</span>
+                <span class="nav-logo-text">Aqua<span>Go</span></span>
+            </a>
+            <ul id="desktopNavLinks" class="d-flex align-items-center list-unstyled mb-0 gap-1 flex-nowrap">
+                <li><a href="index.html" class="nav-link-rr" data-page="index.html">Home</a></li>
+                <li><a href="home-2.html" class="nav-link-rr" data-page="home-2.html">Home 2</a></li>
+                <li><a href="about.html" class="nav-link-rr" data-page="about.html">About</a></li>
+                <li><a href="services.html" class="nav-link-rr" data-page="services.html">Rentals</a></li>
+                <li><a href="gallery.html" class="nav-link-rr active" data-page="gallery.html">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link-rr" data-page="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="nav-link-rr" data-page="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="btn-toggle theme-toggle-btn" aria-label="Toggle dark mode"><i
+                        class="bi bi-moon-fill"></i></button>
+                <button class="btn-toggle rtl-toggle-btn" aria-label="Toggle RTL"><i
+                        class="bi bi-justify-right"></i></button>
+                <a href="register.html" class="btn-book-nav d-none d-lg-inline-flex"><i class="bi bi-person-plus"></i>
+                    Sign Up</a>
+                <button class="hamburger" aria-label="Open menu" aria-expanded="false"><i
+                        class="bi bi-list"></i></button>
+            </div>
+        </div>
+    </nav>
+    <div class="offcanvas-overlay"></div>
+    <aside class="offcanvas-rr" aria-label="Mobile navigation">
+        <button class="offcanvas-close" aria-label="Close menu"><i class="bi bi-x-lg"></i></button>
+        <div class="d-flex align-items-center gap-2 mb-4 mt-2"><span style="font-size:1.5rem;">🌊</span><span
+                class="nav-logo-text" style="color:var(--text);">Aqua<span>Go</span></span></div>
+        <div class="mobile-nav-divider"></div><ul class="list-unstyled">
+            <li><a href="index.html" class="mobile-nav-link" data-page="index.html"><i
+                        class="bi bi-house-fill text-primary-rr"></i> Home</a></li>
+            <li><a href="home-2.html" class="mobile-nav-link" data-page="home-2.html"><i
+                        class="bi bi-house-door text-primary-rr"></i> Home 2</a></li>
+            <li><a href="about.html" class="mobile-nav-link" data-page="about.html"><i
+                        class="bi bi-people text-primary-rr"></i> About</a></li>
+            <li><a href="services.html" class="mobile-nav-link" data-page="services.html"><i
+                        class="bi bi-water text-primary-rr"></i> Rentals</a></li>
+            <li><a href="gallery.html" class="mobile-nav-link active"><i class="bi bi-images text-primary-rr"></i>
+                    Gallery</a></li>
+            <li><a href="blog.html" class="mobile-nav-link"><i class="bi bi-newspaper text-primary-rr"></i> Blog</a>
+            </li>
+            <li><a href="contact.html" class="mobile-nav-link"><i class="bi bi-envelope text-primary-rr"></i>
+                    Contact</a></li>
+        </ul>
+        <div class="mobile-nav-divider"></div>
+        <a href="register.html" class="btn-primary-rr w-100 justify-content-center mb-3"><i
+                class="bi bi-person-plus"></i> Sign Up</a>
+        <div class="mobile-menu-controls d-flex gap-2 mb-3">
+            <button class="btn-toggle theme-toggle-btn" aria-label="Toggle dark mode">
+                <i class="bi bi-moon-fill"></i>
+            </button>
+            <button class="btn-toggle rtl-toggle-btn" aria-label="Toggle RTL" title="RTL Mode">
+                <i class="bi bi-justify-right"></i>
+            </button>
+        </div>
+    </aside>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero"
+        style="background-image:url('https://images.unsplash.com/photo-1472745942893-4b9f730c7668?w=1920&q=80');"
+        aria-label="Gallery hero">
+        <div class="container page-hero-content">
+            <span class="section-tag" style="background:rgba(255,255,255,.15);color:#fff;margin-bottom:1rem;"><i
+                    class="bi bi-images"></i> Visual Stories</span>
+            <h1 class="page-hero-title">Adventure Gallery</h1>
+            <p style="color:rgba(255,255,255,.85);margin-top:.8rem;">Real moments from real paddlers on Oregon's most
+                magnificent rivers.</p>
+            <nav class="breadcrumb-rr mt-3" aria-label="Breadcrumb">
+                <a href="index.html">Home</a><span class="breadcrumb-sep">›</span><span>Gallery</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section-pad" aria-label="Photo gallery">
+        <div class="container">
+
+            <!-- Filter Pills -->
+            <div class="d-flex gap-2 flex-wrap justify-content-center mb-5 reveal">
+                <button class="filter-pill active" data-filter="all" aria-pressed="true">🌊 All Photos</button>
+                <button class="filter-pill" data-filter="kayaking" aria-pressed="false">🛶 Kayaking</button>
+                <button class="filter-pill" data-filter="canoe" aria-pressed="false">⛵ Canoeing</button>
+                <button class="filter-pill" data-filter="tours" aria-pressed="false">🧭 Guided Tours</button>
+                <button class="filter-pill" data-filter="wildlife" aria-pressed="false">🦅 Wildlife</button>
+                <button class="filter-pill" data-filter="camping" aria-pressed="false">⛺ Camping</button>
+                <button class="filter-pill" data-filter="sunset" aria-pressed="false">🌅 Sunset</button>
+            </div>
+
+            <!-- Masonry Gallery -->
+            <div class="gallery-grid" role="list">
+
+                <div class="gallery-item" data-category="kayaking" role="listitem">
+                    <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=600&q=80"
+                        alt="Solo kayaker on a calm forest river" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-zoom-in gallery-zoom-icon"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="canoe" role="listitem">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80"
+                        alt="Family canoe trip on gentle river" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-zoom-in gallery-zoom-icon"></i></div>
+                </div>
+
+                <div class="gallery-item" data-category="tours" role="listitem">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80"
+                        alt="Whitewater guided group rafting" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-zoom-in gallery-zoom-icon"></i></div>
+                </div>
+
+                <div class="gallery-item" data-category="sunset" role="listitem">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80"
+                        alt="Sunset canoe paddle golden hour" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-zoom-in gallery-zoom-icon"></i></div>
+                </div>
+
+                <div class="gallery-item" data-category="kayaking" role="listitem">
+                    <img src="https://images.unsplash.com/photo-1472745942893-4b9f730c7668?w=600&q=80"
+                        alt="Group kayak expedition forest river" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-zoom-in gallery-zoom-icon"></i></div>
+                </div>
+
+                <div class="gallery-item" data-category="camping" role="listitem">
+                    <img src="https://images.unsplash.com/photo-1499336315816-097655dcfbda?w=600&q=80"
+                        alt="Riverside campsite by the water" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-zoom-in gallery-zoom-icon"></i></div>
+                </div>
+
+                <div class="gallery-item" data-category="wildlife" role="listitem">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80"
+                        alt="Eagle soaring above the river" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-zoom-in gallery-zoom-icon"></i></div>
+                </div>
+
+                <div class="gallery-item" data-category="canoe" role="listitem">
+                    <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=600&q=80"
+                        alt="Two person canoe peaceful river" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-zoom-in gallery-zoom-icon"></i></div>
+                </div>
+
+                <div class="gallery-item" data-category="tours" role="listitem">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80"
+                        alt="River canyon guided tour" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-zoom-in gallery-zoom-icon"></i></div>
+                </div>
+
+                <div class="gallery-item" data-category="kayaking" role="listitem">
+                    <img src="https://images.unsplash.com/photo-1601024445121-e5b82f020549?w=600&q=80"
+                        alt="Kayaker entering river rapids" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-zoom-in gallery-zoom-icon"></i></div>
+                </div>
+
+                <div class="gallery-item" data-category="sunset" role="listitem">
+                    <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80"
+                        alt="Sunset reflection on still river" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-zoom-in gallery-zoom-icon"></i></div>
+                </div>
+
+                <div class="gallery-item" data-category="wildlife" role="listitem">
+                    <img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=600&q=80"
+                        alt="Osprey bird at the river" loading="lazy">
+                    <div class="gallery-overlay"><i class="bi bi-zoom-in gallery-zoom-icon"></i></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- UNIQUE SECTION 1: RIVER SEASONS -->
+    <section class="section-pad bg-alt" aria-label="River Seasons Gallery">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 reveal-left">
+                    <span class="section-tag"><i class="bi bi-calendar3"></i> River Seasons</span>
+                    <h2 class="section-title text-start">Ever-Changing Beauty</h2>
+                    <p style="color:var(--text-muted);margin-bottom:1.5rem;">From the vibrant greens of Spring snowmelt
+                        to the gold and crimson reflections of Autumn, our rivers offer a completely new visual
+                        experience every month of the year.</p>
+                    <div class="seasonal-tabs">
+                        <div class="d-flex gap-3 mb-4">
+                            <div class="season-badge active"
+                                style="padding:10px 20px;background:rgba(14,116,144,.1);border-radius:12px;border:1px solid var(--primary);font-weight:700;color:var(--primary);">
+                                <i class="bi bi-moisture"></i> Spring Surge
+                            </div>
+                            <div class="season-badge"
+                                style="padding:10px 20px;background:rgba(0,0,0,.04);border-radius:12px;border:1px solid transparent;font-weight:700;color:var(--text-muted);">
+                                <i class="bi bi-wind"></i> Autumn Calm
+                            </div>
+                        </div>
+                        <ul class="list-unstyled" style="color:var(--text-muted);font-size:.9rem;">
+                            <li class="mb-2"><i class="bi bi-check2-circle text-primary-rr me-2"></i> High water levels
+                                for exciting rapids</li>
+                            <li class="mb-2"><i class="bi bi-check2-circle text-primary-rr me-2"></i> Lush old-growth
+                                canopy at peak green</li>
+                            <li><i class="bi bi-check2-circle text-primary-rr me-2"></i> Migratory birds return to the
+                                riverbanks</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-7 reveal-right">
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <div class="gallery-item"
+                                style="height:400px;border-radius:var(--radius-xl);overflow:hidden;">
+                                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80"
+                                    alt="Spring river greens" style="width:100%;height:100%;object-fit:cover;">
+                                <div class="gallery-overlay"><i class="bi bi-zoom-in gallery-zoom-icon"></i></div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="gallery-item"
+                                style="height:400px;border-radius:var(--radius-xl);overflow:hidden;">
+                                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80"
+                                    alt="Autumn river colors" style="width:100%;height:100%;object-fit:cover;">
+                                <div class="gallery-overlay"><i class="bi bi-zoom-in gallery-zoom-icon"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UNIQUE SECTION 2: STAFF PICKS -->
+    <section class="section-pad" aria-label="Iconic Photo Spots">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <span class="section-tag"><i class="bi bi-camera"></i> Staff Picks</span>
+                <h2 class="section-title">Iconic Photo Spots</h2>
+                <p class="section-sub">Our guides share their favorite hidden places on the river where the light and
+                    scenery are absolutely perfect for the "hero shot."</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 reveal">
+                    <div class="card-rr overflow-hidden">
+                        <div style="height:280px;position:relative;">
+                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80"
+                                alt="The Emerald Gate" style="width:100%;height:100%;object-fit:cover;">
+                            <div
+                                style="position:absolute;bottom:0;left:0;right:0;padding:25px 20px;background:linear-gradient(to top, rgba(0,0,0,.85) 0%, rgba(0,0,0,0.4) 60%, transparent 100%);color:#fff;">
+                                <h5 class="mb-0" style="color:#fff;font-weight:700;">The Emerald Gate</h5>
+                                <div style="font-size:.85rem;opacity:.95;color:#fff;">Mile Marker 4.2 · River Canyon
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 reveal" style="transition-delay:.1s">
+                    <div class="card-rr overflow-hidden">
+                        <div style="height:280px;position:relative;">
+                            <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80"
+                                alt="Glassy Reach" style="width:100%;height:100%;object-fit:cover;">
+                            <div
+                                style="position:absolute;bottom:0;left:0;right:0;padding:25px 20px;background:linear-gradient(to top, rgba(0,0,0,.85) 0%, rgba(0,0,0,0.4) 60%, transparent 100%);color:#fff;">
+                                <h5 class="mb-0" style="color:#fff;font-weight:700;">Glassy Reach</h5>
+                                <div style="font-size:.85rem;opacity:.95;color:#fff;">Mile Marker 7.8 · Stillwater Bend
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 reveal" style="transition-delay:.2s">
+                    <div class="card-rr overflow-hidden">
+                        <div style="height:280px;position:relative;">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80"
+                                alt="Sunset Grotto" style="width:100%;height:100%;object-fit:cover;">
+                            <div
+                                style="position:absolute;bottom:0;left:0;right:0;padding:25px 20px;background:linear-gradient(to top, rgba(0,0,0,.85) 0%, rgba(0,0,0,0.4) 60%, transparent 100%);color:#fff;">
+                                <h5 class="mb-0" style="color:#fff;font-weight:700;">Sunset Grotto</h5>
+                                <div style="font-size:.85rem;opacity:.95;color:#fff;">Mile Marker 12.5 · Lower Delta
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSTAGRAM CTA -->
+    <section class="section-pad-sm bg-alt" aria-label="Social media">
+        <div class="container text-center reveal">
+            <i class="bi bi-instagram"
+                style="font-size:3rem;color:var(--primary);margin-bottom:1rem;display:block;"></i>
+            <h3 style="font-weight:800;margin-bottom:.6rem;">Share Your Adventure</h3>
+            <p style="color:var(--text-muted);max-width:480px;margin:0 auto 1.5rem;">Tag your river photos
+                <strong>@riverrunoutfitters</strong> and use <strong>#MyRiverRun</strong> for a chance to be featured in
+                our gallery!
+            </p>
+            <a href="#" class="btn-primary-rr"><i class="bi bi-instagram"></i> Follow on Instagram</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-rr" role="contentinfo">
+        <!-- Wave top -->
+        <div style="line-height:0;background:var(--bg-alt);">
+            <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                style="display:block;">
+                <path d="M0,30 C480,60 960,0 1440,30 L1440,60 L0,60 Z" fill="#071d2b" />
+            </svg>
+        </div>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-5">
+                    <!-- Col 1: Brand -->
+                    <div class="col-lg-3 col-md-6">
+                        <a href="index.html" class="d-flex align-items-center gap-2 mb-3 text-decoration-none">
+                            <span class="footer-logo-icon">🌊</span>
+                            <span class="footer-logo-text">Aqua<span>Go</span></span>
+                        </a>
+                        <p class="footer-desc">Your trusted river adventure partner since 2009. Premium kayak &amp;
+                            canoe rentals, guided trips and unforgettable river experiences in the Pacific Northwest.
+                        </p>
+                        <div class="social-links mt-4">
+                            <a href="#" class="social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                            <a href="#" class="social-btn" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <!-- Col 2: Quick Links -->
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <h6 class="footer-col-title">Quick Links</h6>
+                        <ul>
+                            <li><a href="index.html" class="footer-link"><i class="bi bi-chevron-right"></i>Home</a>
+                            </li>
+                            <li><a href="about.html" class="footer-link"><i class="bi bi-chevron-right"></i>About Us</a>
+                            </li>
+                            <li><a href="gallery.html" class="footer-link"><i
+                                        class="bi bi-chevron-right"></i>Gallery</a></li>
+                            <li><a href="blog.html" class="footer-link"><i class="bi bi-chevron-right"></i>Blog</a></li>
+                            <li><a href="contact.html" class="footer-link"><i
+                                        class="bi bi-chevron-right"></i>Contact</a></li>
+                            <li><a href="login.html" class="footer-link"><i class="bi bi-chevron-right"></i>Member
+                                    Login</a></li>
+                        </ul>
+                    </div>
+                    <!-- Col 3: Services -->
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <h6 class="footer-col-title">Adventure Services</h6>
+                        <ul>
+                            <li><a href="services.html" class="footer-link"><i class="bi bi-water"></i>Single Kayak
+                                    Rental</a></li>
+                            <li><a href="services.html" class="footer-link"><i class="bi bi-people"></i>Tandem Kayak
+                                    Rental</a></li>
+                            <li><a href="services.html" class="footer-link"><i class="bi bi-tsunami"></i>Canoe
+                                    Rental</a></li>
+                            <li><a href="services.html" class="footer-link"><i class="bi bi-map"></i>Guided River
+                                    Tours</a></li>
+                            <li><a href="services.html" class="footer-link"><i class="bi bi-bus-front"></i>Shuttle
+                                    Services</a></li>
+                            <li><a href="services.html" class="footer-link"><i class="bi bi-shield-check"></i>Safety
+                                    Gear Rental</a></li>
+                            <li><a href="booking.html" class="footer-link"><i class="bi bi-file-earmark-text"></i>Online
+                                    Waiver</a></li>
+                        </ul>
+                    </div>
+                    <!-- Col 4: Newsletter -->
+                    <div class="col-lg-4 col-md-6">
+                        <h6 class="footer-col-title">River Updates</h6>
+                        <p style="font-size:.9rem;margin-bottom:1rem;">Get seasonal river conditions, trip deals and
+                            adventure inspiration delivered to your inbox.</p>
+                        <form class="newsletter-form" aria-label="Newsletter subscription">
+                            <input type="email" class="newsletter-input" placeholder="Enter your email"
+                                aria-label="Email address" required>
+                            <button class="newsletter-btn" type="submit" aria-label="Subscribe">Subscribe</button>
+                        </form>
+                        <div class="mt-4">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <i class="bi bi-geo-alt-fill" style="color:var(--accent);"></i>
+                                <span style="font-size:.88rem;">1 Riverbank Way, Maplewood, OR 97401</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <i class="bi bi-telephone-fill" style="color:var(--accent);"></i>
+                                <a href="tel:+15557483001" style="font-size:.88rem;color:rgba(255,255,255,.65);">(555)
+                                    748-3001</a>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-envelope-fill" style="color:var(--accent);"></i>
+                                <a href="mailto:hello@riverrunoutfitters.com"
+                                    style="font-size:.88rem;color:rgba(255,255,255,.65);">hello@riverrunoutfitters.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+                <p class="mb-0">© 2026 AquaGo. All rights reserved. | <a href="#"
+                        style="color:rgba(255,255,255,.55);">Privacy Policy</a> | <a href="#"
+                        style="color:rgba(255,255,255,.55);">Terms</a></p>
+                <p class="mb-0">Crafted with ❤️ for River Adventurers</p>
+            </div>
+        </div>
+    </footer>
+    <button id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-label="Image viewer" aria-modal="true">
+        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+        <img src="" alt="Expanded adventure photo">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+
+

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AquaGo — Kayak & Canoe Rental | River Adventures</title>
+    <meta name="description"
+        content="AquaGo offers premium kayak rentals, canoe rentals, guided river trips, shuttle services and group adventure packages. Book your river adventure today!" />
+    <meta name="keywords"
+        content="kayak rental, canoe rental, river trips, guided tours, river outfitter, adventure, outdoor" />
+    <meta property="og:title" content="AquaGo — Kayak & Canoe Rental" />
+    <meta property="og:description"
+        content="Premium kayak and canoe rentals, guided tours and river adventures for all skill levels." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://riverrunoutfitters.com/" />
+    <link rel="canonical" href="https://riverrunoutfitters.com/" />
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "AquaGo",
+    "description": "Kayak & Canoe Rental River Outfitter",
+    "url": "https://riverrunoutfitters.com",
+    "telephone": "+1-555-RIVER-01",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1 Riverbank Way",
+      "addressLocality": "Maplewood",
+      "addressRegion": "OR",
+      "postalCode": "97401",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "44.0521",
+      "longitude": "-123.0868"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+    <!-- ── NAVBAR ──────────────────────────────────────────── -->
+    <nav class="navbar-rr" role="navigation" aria-label="Main navigation" id="mainNav">
+        <div class="container d-flex align-items-center justify-content-between gap-3">
+            <!-- Logo -->
+            <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none">
+                <span class="nav-logo-icon">🌊</span>
+                <span class="nav-logo-text">Aqua<span>Go</span></span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <ul id="desktopNavLinks" class="d-flex align-items-center list-unstyled mb-0 gap-1 flex-nowrap">
+                <li><a href="index.html" class="nav-link-rr" data-page="index.html">Home</a></li>
+                <li><a href="home-2.html" class="nav-link-rr" data-page="home-2.html">Home 2</a></li>
+                <li><a href="about.html" class="nav-link-rr" data-page="about.html">About</a></li>
+                <li><a href="services.html" class="nav-link-rr" data-page="services.html">Rentals</a></li>
+                <li><a href="gallery.html" class="nav-link-rr" data-page="gallery.html">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link-rr" data-page="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="nav-link-rr" data-page="contact.html">Contact</a></li>
+            </ul>
+
+            <!-- Controls -->
+            <div class="nav-controls">
+                <button class="btn-toggle theme-toggle-btn" aria-label="Toggle dark mode" id="themeBtn">
+                    <i class="bi bi-moon-fill"></i>
+                </button>
+                <button class="btn-toggle rtl-toggle-btn" aria-label="Toggle RTL" title="RTL Mode" id="rtlBtn">
+                    <i class="bi bi-justify-right"></i>
+                </button>
+                <a href="register.html" class="btn-book-nav d-none d-lg-inline-flex"><i class="bi bi-person-plus"></i>
+                    Sign Up</a>
+                <a href="booking.html" class="btn-book-nav d-none d-md-inline-flex d-lg-none"
+                    style="padding:10px 14px;">
+                    <i class="bi bi-calendar2-check"></i>
+                </a>
+                <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileOffcanvas">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ── OFFCANVAS OVERLAY ───────────────────────────────── -->
+    <div class="offcanvas-overlay" id="offcanvasOverlay" aria-hidden="true"></div>
+
+    <!-- ── OFFCANVAS MENU ──────────────────────────────────── -->
+    <aside class="offcanvas-rr" id="mobileOffcanvas" aria-label="Mobile navigation">
+        <button class="offcanvas-close" aria-label="Close menu"><i class="bi bi-x-lg"></i></button>
+        <div class="d-flex align-items-center gap-2 mb-4 mt-2">
+            <span style="font-size:1.5rem;">🌊</span>
+            <span class="nav-logo-text" style="color:var(--text);">Aqua<span>Go</span></span>
+        </div>
+        <nav class="mobile-nav-divider"></nav><ul class="list-unstyled">
+            <li><a href="index.html" class="mobile-nav-link" data-page="index.html"><i
+                        class="bi bi-house-fill text-primary-rr"></i> Home</a></li>
+            <li><a href="home-2.html" class="mobile-nav-link" data-page="home-2.html"><i
+                        class="bi bi-house-door text-primary-rr"></i> Home 2</a></li>
+            <li><a href="about.html" class="mobile-nav-link" data-page="about.html"><i
+                        class="bi bi-people text-primary-rr"></i> About</a></li>
+            <li><a href="services.html" class="mobile-nav-link" data-page="services.html"><i
+                        class="bi bi-water text-primary-rr"></i> Rentals</a></li>
+            <li><a href="gallery.html" class="mobile-nav-link" data-page="gallery.html"><i
+                        class="bi bi-images text-primary-rr"></i> Gallery</a></li>
+            <li><a href="blog.html" class="mobile-nav-link" data-page="blog.html"><i
+                        class="bi bi-newspaper text-primary-rr"></i> Blog</a></li>
+            <li><a href="contact.html" class="mobile-nav-link" data-page="contact.html"><i
+                        class="bi bi-envelope text-primary-rr"></i> Contact</a></li>
+        </ul>
+        <div class="mobile-nav-divider"></div>
+        <a href="register.html" class="btn-primary-rr w-100 justify-content-center mb-3"><i
+                class="bi bi-person-plus"></i> Sign Up</a>
+        <div class="mobile-menu-controls d-flex gap-2 mb-3">
+            <button class="btn-toggle theme-toggle-btn" aria-label="Toggle dark mode">
+                <i class="bi bi-moon-fill"></i>
+            </button>
+            <button class="btn-toggle rtl-toggle-btn" aria-label="Toggle RTL" title="RTL Mode">
+                <i class="bi bi-justify-right"></i>
+            </button>
+        </div>
+    </aside>
+
+    <!-- ════════════════════════════════════════════════════════
+       HERO SECTION
+       ════════════════════════════════════════════════════════ -->
+    <section class="hero-rr"
+        style="background-image:url('https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1920&q=80');"
+        aria-label="Hero">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="container hero-content">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-7">
+                    <span class="hero-tag fade-in-up d1">
+                        <i class="bi bi-water"></i> #1 River Outfitter in the Pacific Northwest
+                    </span>
+                    <h1 class="hero-title fade-in-up d2">
+                        Explore The River<br><span>Like Never Before</span>
+                    </h1>
+                    <p class="hero-sub fade-in-up d3">
+                        Kayak, Canoe &amp; Adventure Rentals for every explorer. From calm family floats to thrilling
+                        whitewater runs — your river story starts here.
+                    </p>
+                    <div class="hero-btns fade-in-up d4">
+                        <a href="booking.html" class="btn-accent-rr ripple-btn">
+                            <i class="bi bi-calendar2-check"></i> Book Your Trip
+                        </a>
+                        <a href="gallery.html" class="btn-ghost-rr">
+                            <i class="bi bi-map"></i> View River Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+       FEATURED RENTALS
+       ════════════════════════════════════════════════════════ -->
+    <section class="section-pad" aria-label="Featured Rentals">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <span class="section-tag"><i class="bi bi-water"></i> Our Fleet</span>
+                <h2 class="section-title">Featured Rentals</h2>
+                <p class="section-sub">Choose from our premium fleet of kayaks, canoes and river gear — all maintained
+                    to the highest safety standards.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Single Kayak -->
+                <div class="col-lg-3 col-md-6 reveal">
+                    <div class="service-card h-100">
+                        <div class="service-icon"><i class="bi bi-water"></i></div>
+                        <h4>Single Kayak</h4>
+                        <p>Perfect for solo adventurers. Stable, fast and fun on any river section.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span
+                                style="font-size:1.3rem;font-weight:800;color:var(--primary);font-family:var(--font-h);">$35<small
+                                    style="font-size:.7rem;font-weight:400;">/half day</small></span>
+                            <a href="booking.html" class="btn-primary-rr ripple-btn"
+                                style="padding:10px 18px;font-size:.85rem;">Book</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tandem Kayak -->
+                <div class="col-lg-3 col-md-6 reveal" style="transition-delay:.1s">
+                    <div class="service-card h-100">
+                        <div class="service-icon"><i class="bi bi-people-fill"></i></div>
+                        <h4>Tandem Kayak</h4>
+                        <p>Great for couples or friends wanting to share the paddle experience.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span
+                                style="font-size:1.3rem;font-weight:800;color:var(--primary);font-family:var(--font-h);">$55<small
+                                    style="font-size:.7rem;font-weight:400;">/half day</small></span>
+                            <a href="booking.html" class="btn-primary-rr ripple-btn"
+                                style="padding:10px 18px;font-size:.85rem;">Book</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Canoe -->
+                <div class="col-lg-3 col-md-6 reveal" style="transition-delay:.2s">
+                    <div class="service-card h-100">
+                        <div class="service-icon"><i class="bi bi-tsunami"></i></div>
+                        <h4>Canoe Rental</h4>
+                        <p>Classic canoe built for families. Spacious, stable and super comfortable.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span
+                                style="font-size:1.3rem;font-weight:800;color:var(--primary);font-family:var(--font-h);">$45<small
+                                    style="font-size:.7rem;font-weight:400;">/half day</small></span>
+                            <a href="booking.html" class="btn-primary-rr ripple-btn"
+                                style="padding:10px 18px;font-size:.85rem;">Book</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Safety Gear -->
+                <div class="col-lg-3 col-md-6 reveal" style="transition-delay:.3s">
+                    <div class="service-card h-100">
+                        <div class="service-icon"><i class="bi bi-shield-check"></i></div>
+                        <h4>Safety Gear Kit</h4>
+                        <p>Life jackets, helmets, dry bags and waterproof gear — safety first, always.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span
+                                style="font-size:1.3rem;font-weight:800;color:var(--primary);font-family:var(--font-h);">$12<small
+                                    style="font-size:.7rem;font-weight:400;">/day</small></span>
+                            <a href="booking.html" class="btn-primary-rr ripple-btn"
+                                style="padding:10px 18px;font-size:.85rem;">Add</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="services.html" class="btn-outline-rr">View All Services <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+       POPULAR RIVER TRIPS
+       ════════════════════════════════════════════════════════ -->
+    <section class="section-pad bg-alt" aria-label="Popular River Trips">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <span class="section-tag"><i class="bi bi-map"></i> River Routes</span>
+                <h2 class="section-title">Popular River Trips</h2>
+                <p class="section-sub">Handpicked routes for every skill level — from calm scenic floats to
+                    heart-pumping whitewater adventures.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="card-rr overflow-hidden">
+                        <div style="height:220px;overflow:hidden;position:relative;">
+                            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&q=80"
+                                alt="Emerald River float trip"
+                                style="width:100%;height:100%;object-fit:cover;transition:transform .5s ease;">
+                            <div style="position:absolute;top:12px;left:12px;" class="diff-badge diff-easy">Easy · 3 hrs
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5 style="font-weight:700;margin-bottom:.4rem;">Emerald Valley Float</h5>
+                            <p style="color:var(--text-muted);font-size:.9rem;margin-bottom:1rem;">A beautiful 7-mile
+                                scenic float through old-growth forest. Perfect for beginners and families.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span style="color:var(--primary);font-weight:700;">From $35/person</span>
+                                <a href="service-details.html" class="btn-primary-rr"
+                                    style="padding:9px 18px;font-size:.85rem;">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal" style="transition-delay:.1s">
+                    <div class="card-rr overflow-hidden">
+                        <div style="height:220px;overflow:hidden;position:relative;">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80"
+                                alt="Whitewater canyon kayak trip"
+                                style="width:100%;height:100%;object-fit:cover;transition:transform .5s ease;">
+                            <div style="position:absolute;top:12px;left:12px;" class="diff-badge diff-hard">Expert · 6
+                                hrs</div>
+                        </div>
+                        <div class="p-4">
+                            <h5 style="font-weight:700;margin-bottom:.4rem;">Canyon Rapids Run</h5>
+                            <p style="color:var(--text-muted);font-size:.9rem;margin-bottom:1rem;">Heart-pumping Class
+                                III rapids through the famous river canyon. Guide required.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span style="color:var(--primary);font-weight:700;">From $89/person</span>
+                                <a href="service-details.html" class="btn-primary-rr"
+                                    style="padding:9px 18px;font-size:.85rem;">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal" style="transition-delay:.2s">
+                    <div class="card-rr overflow-hidden">
+                        <div style="height:220px;overflow:hidden;position:relative;">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80"
+                                alt="Sunset paddle canoe tour"
+                                style="width:100%;height:100%;object-fit:cover;transition:transform .5s ease;">
+                            <div style="position:absolute;top:12px;left:12px;" class="diff-badge diff-moderate">Moderate
+                                · 4 hrs</div>
+                        </div>
+                        <div class="p-4">
+                            <h5 style="font-weight:700;margin-bottom:.4rem;">Sunset Canoe Tour</h5>
+                            <p style="color:var(--text-muted);font-size:.9rem;margin-bottom:1rem;">Guided evening paddle
+                                watching golden-hour reflections on glassy water. Romantic and serene.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span style="color:var(--primary);font-weight:700;">From $55/person</span>
+                                <a href="service-details.html" class="btn-primary-rr"
+                                    style="padding:9px 18px;font-size:.85rem;">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+       WHY CHOOSE US
+       ════════════════════════════════════════════════════════ -->
+    <section class="section-pad" aria-label="Why Choose Us">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 reveal-left">
+                    <img src="https://images.unsplash.com/photo-1472745942893-4b9f730c7668?w=700&q=80"
+                        alt="River guide leading kayak group"
+                        style="border-radius:var(--radius-xl);box-shadow:var(--shadow-lg);width:100%;">
+                </div>
+                <div class="col-lg-6 reveal-right">
+                    <span class="section-tag"><i class="bi bi-award"></i> Why Choose Us</span>
+                    <h2 class="section-title text-start">The RiverRun<br>Difference</h2>
+                    <p style="color:var(--text-muted);margin-bottom:1.5rem;">We're not just a rental shop — we're river
+                        people. Every guide, every piece of gear and every trip route has been tested and perfected over
+                        15 years on the water.</p>
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="d-flex gap-3 align-items-start">
+                                <div
+                                    style="width:48px;height:48px;background:rgba(14,116,144,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--primary);font-size:1.2rem;">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <div>
+                                    <h6 style="font-weight:700;margin-bottom:.3rem;">Certified Safety Standards</h6>
+                                    <p style="color:var(--text-muted);font-size:.9rem;margin:0;">All guides are
+                                        ACA-certified. Every rental includes safety briefing and top-rated equipment.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex gap-3 align-items-start">
+                                <div
+                                    style="width:48px;height:48px;background:rgba(249,115,22,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--accent);font-size:1.2rem;">
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <div>
+                                    <h6 style="font-weight:700;margin-bottom:.3rem;">4.9★ Customer Rating</h6>
+                                    <p style="color:var(--text-muted);font-size:.9rem;margin:0;">Over 5,000 five-star
+                                        reviews from happy paddlers across the Pacific Northwest.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex gap-3 align-items-start">
+                                <div
+                                    style="width:48px;height:48px;background:rgba(20,83,45,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--secondary-light);font-size:1.2rem;">
+                                    <i class="bi bi-tree"></i>
+                                </div>
+                                <div>
+                                    <h6 style="font-weight:700;margin-bottom:.3rem;">Leave No Trace Committed</h6>
+                                    <p style="color:var(--text-muted);font-size:.9rem;margin:0;">We plant a tree for
+                                        every booking and follow strict environmental stewardship standards.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="about.html" class="btn-primary-rr">Learn Our Story <i
+                                class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+       TESTIMONIALS
+       ════════════════════════════════════════════════════════ -->
+    <section class="section-pad bg-alt" aria-label="Customer Testimonials">
+        <div class="container">
+            <div class="text-center mb-5 reveal">
+                <span class="section-tag"><i class="bi bi-chat-quote"></i> Reviews</span>
+                <h2 class="section-title">What Paddlers Say</h2>
+                <p class="section-sub">Real stories from real adventurers who trusted RiverRun with their river
+                    experience.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 reveal">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"Absolutely incredible experience. Our guide Marcus knew every inch of
+                            the river. Kids had the time of their lives — we're already planning our return trip!"</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80"
+                                alt="Sarah M. reviewer" class="reviewer-avatar">
+                            <div>
+                                <div class="reviewer-name">Sarah M.</div>
+                                <div class="reviewer-loc"><i class="bi bi-geo-alt-fill"
+                                        style="font-size:.7rem;color:var(--accent);"></i> Portland, OR</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal" style="transition-delay:.1s">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"We brought our corporate group of 22 people and RiverRun handled
+                            everything perfectly. The team building on the river was a transformative experience."</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80"
+                                alt="James K. reviewer" class="reviewer-avatar">
+                            <div>
+                                <div class="reviewer-name">James K.</div>
+                                <div class="reviewer-loc"><i class="bi bi-geo-alt-fill"
+                                        style="font-size:.7rem;color:var(--accent);"></i> Seattle, WA</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal" style="transition-delay:.2s">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"The sunset canoe tour was magical. Glassy water, golden light, no other
+                            people around. I've never felt so at peace. 10/10 would recommend to everyone!"</p>
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80"
+                                alt="Lisa T. reviewer" class="reviewer-avatar">
+                            <div>
+                                <div class="reviewer-name">Lisa T.</div>
+                                <div class="reviewer-loc"><i class="bi bi-geo-alt-fill"
+                                        style="font-size:.7rem;color:var(--accent);"></i> Eugene, OR</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════════════════════════════════════════════════════════
+       GROUP BOOKING CTA
+       ════════════════════════════════════════════════════════ -->
+    <section class="section-pad" aria-label="Group Booking CTA">
+        <div class="container">
+            <div class="cta-banner reveal">
+                <span class="section-tag"
+                    style="background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.2);">
+                    <i class="bi bi-people-fill"></i> Group Adventures
+                </span>
+                <h2>Planning a Group Trip?</h2>
+                <p>We specialize in corporate retreats, school groups, bachelor parties, family reunions and more.
+                    Custom packages for 10 to 200+ people.</p>
+                <div class="d-flex gap-3 justify-content-center flex-wrap">
+                    <a href="booking.html" class="btn-accent-rr">Get Group Quote <i class="bi bi-arrow-right"></i></a>
+                    <a href="contact.html" class="btn-ghost-rr">Talk to a Guide</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════════════════════════
+       FOOTER
+       ════════════════════════════════════════════════════════ -->
+    <footer class="footer-rr" role="contentinfo">
+        <!-- Wave top -->
+        <div style="line-height:0;background:var(--bg-alt);">
+            <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                style="display:block;">
+                <path d="M0,30 C480,60 960,0 1440,30 L1440,60 L0,60 Z" fill="#071d2b" />
+            </svg>
+        </div>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-5">
+                    <!-- Col 1: Brand -->
+                    <div class="col-lg-3 col-md-6">
+                        <a href="index.html" class="d-flex align-items-center gap-2 mb-3 text-decoration-none">
+                            <span class="footer-logo-icon">🌊</span>
+                            <span class="footer-logo-text">Aqua<span>Go</span></span>
+                        </a>
+                        <p class="footer-desc">Your trusted river adventure partner since 2009. Premium kayak &amp;
+                            canoe rentals, guided trips and unforgettable river experiences in the Pacific Northwest.
+                        </p>
+                        <div class="social-links mt-4">
+                            <a href="#" class="social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                            <a href="#" class="social-btn" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <!-- Col 2: Quick Links -->
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <h6 class="footer-col-title">Quick Links</h6>
+                        <ul>
+                            <li><a href="index.html" class="footer-link"><i class="bi bi-chevron-right"></i>Home</a>
+                            </li>
+                            <li><a href="about.html" class="footer-link"><i class="bi bi-chevron-right"></i>About Us</a>
+                            </li>
+                            <li><a href="gallery.html" class="footer-link"><i
+                                        class="bi bi-chevron-right"></i>Gallery</a></li>
+                            <li><a href="blog.html" class="footer-link"><i class="bi bi-chevron-right"></i>Blog</a></li>
+                            <li><a href="contact.html" class="footer-link"><i
+                                        class="bi bi-chevron-right"></i>Contact</a></li>
+                            <li><a href="login.html" class="footer-link"><i class="bi bi-chevron-right"></i>Member
+                                    Login</a></li>
+                        </ul>
+                    </div>
+                    <!-- Col 3: Services -->
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <h6 class="footer-col-title">Adventure Services</h6>
+                        <ul>
+                            <li><a href="services.html" class="footer-link"><i class="bi bi-water"></i>Single Kayak
+                                    Rental</a></li>
+                            <li><a href="services.html" class="footer-link"><i class="bi bi-people"></i>Tandem Kayak
+                                    Rental</a></li>
+                            <li><a href="services.html" class="footer-link"><i class="bi bi-tsunami"></i>Canoe
+                                    Rental</a></li>
+                            <li><a href="services.html" class="footer-link"><i class="bi bi-map"></i>Guided River
+                                    Tours</a></li>
+                            <li><a href="services.html" class="footer-link"><i class="bi bi-bus-front"></i>Shuttle
+                                    Services</a></li>
+                            <li><a href="services.html" class="footer-link"><i class="bi bi-shield-check"></i>Safety
+                                    Gear Rental</a></li>
+                            <li><a href="booking.html" class="footer-link"><i class="bi bi-file-earmark-text"></i>Online
+                                    Waiver</a></li>
+                        </ul>
+                    </div>
+                    <!-- Col 4: Newsletter -->
+                    <div class="col-lg-4 col-md-6">
+                        <h6 class="footer-col-title">River Updates</h6>
+                        <p style="font-size:.9rem;margin-bottom:1rem;">Get seasonal river conditions, trip deals and
+                            adventure inspiration delivered to your inbox.</p>
+                        <form class="newsletter-form" aria-label="Newsletter subscription">
+                            <input type="email" class="newsletter-input" placeholder="Enter your email"
+                                aria-label="Email address" required>
+                            <button class="newsletter-btn" type="submit" aria-label="Subscribe">Subscribe</button>
+                        </form>
+                        <div class="mt-4">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <i class="bi bi-geo-alt-fill" style="color:var(--accent);"></i>
+                                <span style="font-size:.88rem;">1 Riverbank Way, Maplewood, OR 97401</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <i class="bi bi-telephone-fill" style="color:var(--accent);"></i>
+                                <a href="tel:+15557483001" style="font-size:.88rem;color:rgba(255,255,255,.65);">(555)
+                                    748-3001</a>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-envelope-fill" style="color:var(--accent);"></i>
+                                <a href="mailto:hello@riverrunoutfitters.com"
+                                    style="font-size:.88rem;color:rgba(255,255,255,.65);">hello@riverrunoutfitters.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+                <p class="mb-0">© 2026 AquaGo. All rights reserved. | <a href="#"
+                        style="color:rgba(255,255,255,.55);">Privacy Policy</a> | <a href="#"
+                        style="color:rgba(255,255,255,.55);">Terms</a></p>
+                <p class="mb-0">Crafted with ❤️ for River Adventurers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-label="Image viewer">
+        <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+        <img src="" alt="Expanded adventure photo">
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book a River Adventure — AquaGo | Online Booking</title>
+    <meta name="description"
+        content="Book your kayak rental, canoe trip or guided river adventure online with AquaGo. Easy online booking with instant confirmation." />
+    <meta property="og:title" content="Book Your River Adventure — AquaGo" />
+    <meta property="og:type" content="website" />
+    <link rel="canonical" href="https://riverrunoutfitters.com/booking.html" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar-rr" role="navigation" aria-label="Main navigation" id="mainNav">
+        <div class="container d-flex align-items-center justify-content-between gap-3">
+            <a href="index.html" class="d-flex align-items-center gap-2 text-decoration-none">
+                <span class="nav-logo-icon">🌊</span>
+                <span class="nav-logo-text">Aqua<span>Go</span></span>
+            </a>
+            <ul id="desktopNavLinks" class="d-flex align-items-center list-unstyled mb-0 gap-1 flex-nowrap">
+                <li><a href="index.html" class="nav-link-rr" data-page="index.html">Home</a></li>
+                <li><a href="home-2.html" class="nav-link-rr" data-page="home-2.html">Home 2</a></li>
+                <li><a href="about.html" class="nav-link-rr" data-page="about.html">About</a></li>
+                <li><a href="services.html" class="nav-link-rr" data-page="services.html">Rentals</a></li>
+                <li><a href="gallery.html" class="nav-link-rr" data-page="gallery.html">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link-rr" data-page="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="nav-link-rr" data-page="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="btn-toggle theme-toggle-btn" aria-label="Toggle dark mode"><i
+                        class="bi bi-moon-fill"></i></button>
+                <button class="btn-toggle rtl-toggle-btn" aria-label="Toggle RTL"><i
+                        class="bi bi-justify-right"></i></button>
+                <a href="register.html" class="btn-book-nav d-none d-lg-inline-flex"><i class="bi bi-person-plus"></i>
+                    Sign Up</a>
+                <button class="hamburger" aria-label="Open menu" aria-expanded="false"><i
+                        class="bi bi-list"></i></button>
+            </div>
+        </div>
+    </nav>
+    <div class="offcanvas-overlay"></div>
+    <aside class="offcanvas-rr" aria-label="Mobile navigation">
+        <button class="offcanvas-close" aria-label="Close menu"><i class="bi bi-x-lg"></i></button>
+        <div class="d-flex align-items-center gap-2 mb-4 mt-2"><span style="font-size:1.5rem;">🌊</span><span
+                class="nav-logo-text" style="color:var(--text);">Aqua<span>Go</span></span></div>
+        <div class="mobile-nav-divider"></div><ul class="list-unstyled">
+            <li><a href="index.html" class="mobile-nav-link" data-page="index.html"><i
+                        class="bi bi-house-fill text-primary-rr"></i> Home</a></li>
+            <li><a href="home-2.html" class="mobile-nav-link" data-page="home-2.html"><i
+                        class="bi bi-house-door text-primary-rr"></i> Home 2</a></li>
+            <li><a href="about.html" class="mobile-nav-link" data-page="about.html"><i
+                        class="bi bi-people text-primary-rr"></i> About</a></li>
+            <li><a href="services.html" class="mobile-nav-link" data-page="services.html"><i
+                        class="bi bi-water text-primary-rr"></i> Rentals</a></li>
+            <li><a href="gallery.html" class="mobile-nav-link"><i class="bi bi-images text-primary-rr"></i> Gallery</a>
+            </li>
+            <li><a href="contact.html" class="mobile-nav-link"><i class="bi bi-envelope text-primary-rr"></i>
+                    Contact</a></li>
+        </ul>
+        <div class="mobile-nav-divider"></div>
+        <a href="register.html" class="btn-primary-rr w-100 justify-content-center mb-3"><i
+                class="bi bi-person-plus"></i> Sign Up</a>
+        <div class="mobile-menu-controls d-flex gap-2 mb-3">
+            <button class="btn-toggle theme-toggle-btn" aria-label="Toggle dark mode">
+                <i class="bi bi-moon-fill"></i>
+            </button>
+            <button class="btn-toggle rtl-toggle-btn" aria-label="Toggle RTL" title="RTL Mode">
+                <i class="bi bi-justify-right"></i>
+            </button>
+        </div>
+    </aside>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero"
+        style="background-image:url('https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1920&q=80');min-height:42vh;"
+        aria-label="Booking page hero">
+        <div class="container page-hero-content">
+            <span class="section-tag" style="background:rgba(255,255,255,.15);color:#fff;margin-bottom:1rem;"><i
+                    class="bi bi-calendar2-check"></i> Reserve Your Spot</span>
+            <h1 class="page-hero-title">Book Your River Adventure</h1>
+            <p style="color:rgba(255,255,255,.85);margin-top:.8rem;">Complete the form below and we'll confirm your
+                booking within 24 hours.</p>
+        </div>
+    </section>
+
+    <!-- BOOKING FORM -->
+    <section class="section-pad" aria-label="Booking form">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- Form -->
+                <div class="col-lg-8">
+                    <div class="booking-form-wrap" id="bookingFormContainer">
+                        <h3 style="font-weight:800;margin-bottom:1.5rem;font-family:var(--font-h);">
+                            <i class="bi bi-calendar2-check text-primary-rr me-2"></i> Adventure Booking Form
+                        </h3>
+                        <form id="bookingForm" novalidate>
+                            <div class="row g-4">
+
+                                <!-- Personal Info -->
+                                <div class="col-12">
+                                    <h5
+                                        style="font-weight:700;color:var(--primary);border-bottom:2px solid var(--border);padding-bottom:.6rem;margin-bottom:0;font-size:1rem;">
+                                        👤 Personal Information
+                                    </h5>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-label-rr" for="fullName">Full Name *</label>
+                                    <input type="text" id="fullName" name="fullName" class="form-control-rr"
+                                        placeholder="John Smith" required aria-describedby="fullNameErr">
+                                    <span class="form-error-msg" data-error="fullName" id="fullNameErr"
+                                        aria-live="polite"></span>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-label-rr" for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" class="form-control-rr"
+                                        placeholder="john@email.com" required aria-describedby="emailErr">
+                                    <span class="form-error-msg" data-error="email" id="emailErr"
+                                        aria-live="polite"></span>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-label-rr" for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" class="form-control-rr"
+                                        placeholder="(555) 000-0000" required aria-describedby="phoneErr">
+                                    <span class="form-error-msg" data-error="phone" id="phoneErr"
+                                        aria-live="polite"></span>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-label-rr" for="groupSize">Group Size *</label>
+                                    <select id="groupSize" name="groupSize" class="form-control-rr" required
+                                        aria-describedby="groupSizeErr">
+                                        <option value="">Select group size</option>
+                                        <option>1 person</option>
+                                        <option>2 people</option>
+                                        <option>3–5 people</option>
+                                        <option>6–10 people</option>
+                                        <option>11–20 people</option>
+                                        <option>20+ people</option>
+                                    </select>
+                                    <span class="form-error-msg" data-error="groupSize" id="groupSizeErr"
+                                        aria-live="polite"></span>
+                                </div>
+
+                                <!-- Trip Details -->
+                                <div class="col-12 mt-2">
+                                    <h5
+                                        style="font-weight:700;color:var(--primary);border-bottom:2px solid var(--border);padding-bottom:.6rem;margin-bottom:0;font-size:1rem;">
+                                        🛶 Trip Details
+                                    </h5>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-label-rr" for="rentalType">Rental Type *</label>
+                                    <select id="rentalType" name="rentalType" class="form-control-rr" required
+                                        aria-describedby="rentalTypeErr">
+                                        <option value="">Select rental type</option>
+                                        <option value="single-kayak">Single Kayak — $35/half day</option>
+                                        <option value="tandem-kayak">Tandem Kayak — $55/half day</option>
+                                        <option value="canoe">Family Canoe — $45/half day</option>
+                                        <option value="tube">River Tube — $20/half day</option>
+                                        <option value="guided-tour">Guided Scenic Float — $55/person</option>
+                                        <option value="group-package">Group Package — Contact for pricing</option>
+                                    </select>
+                                    <span class="form-error-msg" data-error="rentalType" id="rentalTypeErr"
+                                        aria-live="polite"></span>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-label-rr" for="riverRoute">River Route *</label>
+                                    <select id="riverRoute" name="riverRoute" class="form-control-rr" required>
+                                        <option value="">Select river route</option>
+                                        <option>Emerald Valley Float (Easy · 7 miles)</option>
+                                        <option>Osprey Bend Paddle (Easy · 4 miles)</option>
+                                        <option>Sunset Canoe Tour (Moderate · 5 miles)</option>
+                                        <option>Canyon Rapids Run (Expert · 12 miles)</option>
+                                        <option>Full Day Adventure (Expert · 18 miles)</option>
+                                        <option>Guide Me — Best for My Group</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-label-rr" for="preferredDate">Preferred Date *</label>
+                                    <input type="date" id="preferredDate" name="preferredDate" class="form-control-rr"
+                                        required aria-describedby="dateErr">
+                                    <span class="form-error-msg" data-error="preferredDate" id="dateErr"
+                                        aria-live="polite"></span>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-label-rr" for="timeSlot">Preferred Time *</label>
+                                    <select id="timeSlot" name="timeSlot" class="form-control-rr" required>
+                                        <option value="">Select time slot</option>
+                                        <option>8:00 AM</option>
+                                        <option>10:00 AM</option>
+                                        <option>12:00 PM</option>
+                                        <option>2:00 PM</option>
+                                    </select>
+                                </div>
+
+                                <!-- Add-Ons -->
+                                <div class="col-12 mt-2">
+                                    <h5
+                                        style="font-weight:700;color:var(--primary);border-bottom:2px solid var(--border);padding-bottom:.6rem;margin-bottom:0;font-size:1rem;">
+                                        ⚙️ Add-Ons &amp; Options
+                                    </h5>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex gap-4 flex-wrap">
+                                        <label
+                                            style="display:flex;align-items:center;gap:8px;cursor:pointer;min-height:44px;">
+                                            <input type="checkbox" name="shuttle"
+                                                style="width:18px;height:18px;accent-color:var(--primary);"> Shuttle
+                                            Service (+$18/person)
+                                        </label>
+                                        <label
+                                            style="display:flex;align-items:center;gap:8px;cursor:pointer;min-height:44px;">
+                                            <input type="checkbox" name="wetsuit"
+                                                style="width:18px;height:18px;accent-color:var(--primary);"> Wet Suit
+                                            Rental (+$20/day)
+                                        </label>
+                                        <label
+                                            style="display:flex;align-items:center;gap:8px;cursor:pointer;min-height:44px;">
+                                            <input type="checkbox" name="camera"
+                                                style="width:18px;height:18px;accent-color:var(--primary);"> GoPro
+                                            Camera (+$22/day)
+                                        </label>
+                                        <label
+                                            style="display:flex;align-items:center;gap:8px;cursor:pointer;min-height:44px;">
+                                            <input type="checkbox" name="camping"
+                                                style="width:18px;height:18px;accent-color:var(--primary);"> Riverside
+                                            Camping (+$35/night)
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label class="form-label-rr" for="specialNotes">Special Notes or Requests</label>
+                                    <textarea id="specialNotes" name="specialNotes" class="form-control-rr" rows="4"
+                                        placeholder="Allergies, accessibility needs, special requests, questions about routes…"
+                                        style="resize:vertical;"></textarea>
+                                </div>
+
+                                <!-- Waiver -->
+                                <div class="col-12" id="waiver">
+                                    <div
+                                        style="background:var(--bg-alt);border-radius:var(--radius-sm);padding:1.2rem;border:1.5px solid var(--border);">
+                                        <h6 style="font-weight:700;margin-bottom:.8rem;"><i
+                                                class="bi bi-file-earmark-text text-primary-rr me-2"></i>Liability
+                                            Waiver</h6>
+                                        <p style="color:var(--text-muted);font-size:.88rem;margin-bottom:.8rem;">By
+                                            checking the box below, I acknowledge that river activities involve inherent
+                                            risks. I agree to follow all guide instructions, safety rules and RiverRun
+                                            Outfitters policies. I understand this waiver releases AquaGo
+                                            from liability for injuries or damages resulting from participation in river
+                                            activities.</p>
+                                        <label
+                                            style="display:flex;align-items:flex-start;gap:10px;cursor:pointer;min-height:44px;">
+                                            <input type="checkbox" id="waiverCheck" name="waiverAccepted"
+                                                style="width:20px;height:20px;accent-color:var(--primary);margin-top:2px;flex-shrink:0;"
+                                                required aria-required="true">
+                                            <span style="font-size:.9rem;font-weight:500;">I have read and agree to the
+                                                <a href="#" style="color:var(--primary);">Liability Waiver</a> and <a
+                                                    href="#" style="color:var(--primary);">Terms of Service</a>.
+                                                *</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <button type="submit" class="btn-primary-rr" id="bookSubmitBtn"
+                                        style="font-size:1rem;padding:16px 40px;" disabled>
+                                        <i class="bi bi-calendar2-check"></i> Confirm Booking
+                                    </button>
+                                    <p style="color:var(--text-muted);font-size:.82rem;margin-top:.8rem;">
+                                        <i class="bi bi-lock-fill text-primary-rr"></i> Your information is secure.
+                                        We'll confirm within 24 hours via email.
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="booking-sidebar">
+                        <h5 style="font-weight:800;margin-bottom:1.2rem;font-family:var(--font-h);">Booking Summary</h5>
+                        <div class="summary-line">
+                            <span>Rental Type</span><span id="priceSummary" style="font-weight:600;">—</span>
+                        </div>
+                        <div class="summary-line">
+                            <span>Shuttle (optional)</span><span>+$18/person</span>
+                        </div>
+                        <div class="summary-line">
+                            <span>Safety Gear</span><span
+                                style="color:var(--secondary-light);font-weight:600;">Included</span>
+                        </div>
+                        <div class="summary-line">
+                            <span>Season</span><span>May – October</span>
+                        </div>
+                        <div class="summary-total">
+                            <span>Deposit Required</span><span style="color:var(--secondary-light);">None</span>
+                        </div>
+
+                        <div
+                            style="background:var(--bg-alt);border-radius:var(--radius-sm);padding:1.2rem;margin-top:1.5rem;">
+                            <h6 style="font-weight:700;margin-bottom:.8rem;"><i
+                                    class="bi bi-clock text-accent-rr me-2"></i>Operating Hours</h6>
+                            <div style="font-size:.88rem;color:var(--text-muted);line-height:1.8;">
+                                <div><strong>Mon–Sat:</strong> 7:30 AM – 6:00 PM</div>
+                                <div><strong>Sunday:</strong> 8:00 AM – 4:00 PM</div>
+                                <div style="margin-top:.5rem;"><strong>Closed:</strong> Major holidays</div>
+                            </div>
+                        </div>
+
+                        <div
+                            style="background:rgba(249,115,22,.08);border-radius:var(--radius-sm);padding:1.2rem;margin-top:1rem;border:1px solid rgba(249,115,22,.2);">
+                            <h6 style="font-weight:700;color:var(--accent);margin-bottom:.5rem;"><i
+                                    class="bi bi-telephone-fill me-2"></i>Need Help?</h6>
+                            <p style="font-size:.87rem;color:var(--text-muted);margin:0;">Call us directly at<br><a
+                                    href="tel:+15557483001"
+                                    style="font-weight:700;color:var(--accent);font-size:1rem;">(555) 748-3001</a></p>
+                        </div>
+
+                        <div class="mt-4">
+                            <h6 style="font-weight:700;margin-bottom:.8rem;">Why Book with Us?</h6>
+                            <div class="d-flex flex-column gap-2" style="font-size:.88rem;color:var(--text-muted);">
+                                <div class="d-flex gap-2 align-items-center"><i
+                                        class="bi bi-check-circle-fill text-primary-rr"></i> Free cancellation 48hrs
+                                    before</div>
+                                <div class="d-flex gap-2 align-items-center"><i
+                                        class="bi bi-check-circle-fill text-primary-rr"></i> No hidden fees or deposits
+                                </div>
+                                <div class="d-flex gap-2 align-items-center"><i
+                                        class="bi bi-check-circle-fill text-primary-rr"></i> Instant email confirmation
+                                </div>
+                                <div class="d-flex gap-2 align-items-center"><i
+                                        class="bi bi-check-circle-fill text-primary-rr"></i> ACA-certified guides</div>
+                                <div class="d-flex gap-2 align-items-center"><i
+                                        class="bi bi-check-circle-fill text-primary-rr"></i> Weather rescheduling
+                                    honored</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-rr" role="contentinfo">
+        <!-- Wave top -->
+        <div style="line-height:0;background:var(--bg-alt);">
+            <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                style="display:block;">
+                <path d="M0,30 C480,60 960,0 1440,30 L1440,60 L0,60 Z" fill="#071d2b" />
+            </svg>
+        </div>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-5">
+                    <!-- Col 1: Brand -->
+                    <div class="col-lg-3 col-md-6">
+                        <a href="index.html" class="d-flex align-items-center gap-2 mb-3 text-decoration-none">
+                            <span class="footer-logo-icon">🌊</span>
+                            <span class="footer-logo-text">Aqua<span>Go</span></span>
+                        </a>
+                        <p class="footer-desc">Your trusted river adventure partner since 2009. Premium kayak &amp;
+                            canoe rentals, guided trips and unforgettable river experiences in the Pacific Northwest.
+                        </p>
+                        <div class="social-links mt-4">
+                            <a href="#" class="social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                            <a href="#" class="social-btn" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <!-- Col 2: Quick Links -->
+                    <div class="col-lg-2 col-md-6 col-sm-6">
+                        <h6 class="footer-col-title">Quick Links</h6>
+                        <ul>
+                            <li><a href="index.html" class="footer-link"><i class="bi bi-chevron-right"></i>Home</a>
+                            </li>
+                            <li><a href="about.html" class="footer-link"><i class="bi bi-chevron-right"></i>About Us</a>
+                            </li>
+                            <li><a href="gallery.html" class="footer-link"><i
+                                        class="bi bi-chevron-right"></i>Gallery</a></li>
+                            <li><a href="blog.html" class="footer-link"><i class="bi bi-chevron-right"></i>Blog</a></li>
+                            <li><a href="contact.html" class="footer-link"><i
+                                        class="bi bi-chevron-right"></i>Contact</a></li>
+                            <li><a href="login.html" class="footer-link"><i class="bi bi-chevron-right"></i>Member
+                                    Login</a></li>
+                        </ul>
+                    </div>
+                    <!-- Col 3: Services -->
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <h6 class="footer-col-title">Adventure Services</h6>
+                        <ul>
+                            <li><a href="services.html" class="footer-link"><i class="bi bi-water"></i>Single Kayak
+                                    Rental</a></li>
+                            <li><a href="services.html" class="footer-link"><i class="bi bi-people"></i>Tandem Kayak
+                                    Rental</a></li>
+                            <li><a href="services.html" class="footer-link"><i class="bi bi-tsunami"></i>Canoe
+                                    Rental</a></li>
+                            <li><a href="services.html" class="footer-link"><i class="bi bi-map"></i>Guided River
+                                    Tours</a></li>
+                            <li><a href="services.html" class="footer-link"><i class="bi bi-bus-front"></i>Shuttle
+                                    Services</a></li>
+                            <li><a href="services.html" class="footer-link"><i class="bi bi-shield-check"></i>Safety
+                                    Gear Rental</a></li>
+                            <li><a href="booking.html" class="footer-link"><i class="bi bi-file-earmark-text"></i>Online
+                                    Waiver</a></li>
+                        </ul>
+                    </div>
+                    <!-- Col 4: Newsletter -->
+                    <div class="col-lg-4 col-md-6">
+                        <h6 class="footer-col-title">River Updates</h6>
+                        <p style="font-size:.9rem;margin-bottom:1rem;">Get seasonal river conditions, trip deals and
+                            adventure inspiration delivered to your inbox.</p>
+                        <form class="newsletter-form" aria-label="Newsletter subscription">
+                            <input type="email" class="newsletter-input" placeholder="Enter your email"
+                                aria-label="Email address" required>
+                            <button class="newsletter-btn" type="submit" aria-label="Subscribe">Subscribe</button>
+                        </form>
+                        <div class="mt-4">
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <i class="bi bi-geo-alt-fill" style="color:var(--accent);"></i>
+                                <span style="font-size:.88rem;">1 Riverbank Way, Maplewood, OR 97401</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-2 mb-2">
+                                <i class="bi bi-telephone-fill" style="color:var(--accent);"></i>
+                                <a href="tel:+15557483001" style="font-size:.88rem;color:rgba(255,255,255,.65);">(555)
+                                    748-3001</a>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-envelope-fill" style="color:var(--accent);"></i>
+                                <a href="mailto:hello@riverrunoutfitters.com"
+                                    style="font-size:.88rem;color:rgba(255,255,255,.65);">hello@riverrunoutfitters.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+                <p class="mb-0">© 2026 AquaGo. All rights reserved. | <a href="#"
+                        style="color:rgba(255,255,255,.55);">Privacy Policy</a> | <a href="#"
+                        style="color:rgba(255,255,255,.55);">Terms</a></p>
+                <p class="mb-0">Crafted with ❤️ for River Adventurers</p>
+            </div>
+        </div>
+    </footer>
+    <button id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+
