@@ -88,348 +88,183 @@
         </div>
     </aside>
 
-    <!-- PAGE HERO -->
+    <!-- SECTION 1: PAGE HERO -->
     <section class="page-hero"
-        style="background-image:url('https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1920&q=80');min-height:60vh;"
+        style="background-image:url('https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1920&q=80');min-height:50vh;display:flex;align-items:center;"
         aria-label="Blog article hero">
-        <div class="container page-hero-content">
-            <span class="blog-cat-badge"
-                style="position:static;display:inline-block;margin-bottom:1rem;">Beginner</span>
-            <h1 class="page-hero-title" style="max-width:700px;">10 Essential Kayaking Tips for First-Time Paddlers</h1>
-            <div class="d-flex align-items-center gap-3 mt-3">
-                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&q=80"
-                    alt="Marcus Webb author"
-                    style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid var(--accent);">
-                <div style="color:rgba(255,255,255,.85);font-size:.9rem;">
-                    <strong>Marcus Webb</strong> &mdash; Head River Guide<br>
-                    <span style="opacity:.75;">May 1, 2026 &mdash; 8 min read</span>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center page-hero-content">
+                    <span class="blog-cat-badge mx-auto"
+                        style="position:static;display:inline-block;margin-bottom:1rem;">Beginner</span>
+                    <h1 class="page-hero-title mx-auto">10 Essential Kayaking Tips for First-Time Paddlers</h1>
+                    <div class="d-flex align-items-center justify-content-center gap-3 mt-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&q=80"
+                            alt="Marcus Webb author"
+                            style="width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid var(--accent);">
+                        <div style="color:rgba(255,255,255,.85);font-size:.9rem;text-align:left;">
+                            <strong>Marcus Webb</strong> &mdash; Head River Guide<br>
+                            <span style="opacity:.75;">May 1, 2026 &mdash; 8 min read</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ARTICLE + SIDEBAR -->
+    <!-- SECTION 2: ARTICLE CONTENT -->
     <section class="section-pad" aria-label="Blog article content">
         <div class="container">
-            <div class="row g-5">
-
+            <div class="row justify-content-center">
                 <!-- Article -->
                 <main class="col-lg-8">
                     <!-- Breadcrumb -->
-                    <nav class="breadcrumb-rr mb-4" aria-label="Breadcrumb" style="color:var(--text-muted);">
-                        <a href="index.html">Home</a><span class="breadcrumb-sep">&rsaquo;</span>
-                        <a href="blog.html">Blog</a><span class="breadcrumb-sep">&rsaquo;</span>
-                        <span>10 Kayaking Tips</span>
+                    <nav class="breadcrumb-rr mb-5 justify-content-center" aria-label="Breadcrumb"
+                        style="color:var(--text-muted); opacity: 1; display: flex; gap: 8px;">
+                        <a href="index.html" style="color:var(--text-muted); text-decoration: none;">Home</a>
+                        <span class="breadcrumb-sep">&rsaquo;</span>
+                        <a href="blog.html" style="color:var(--text-muted); text-decoration: none;">Blog</a>
+                        <span class="breadcrumb-sep">&rsaquo;</span>
+                        <span style="color:var(--text-light);">10 Kayaking Tips</span>
                     </nav>
 
-                    <!-- Share buttons -->
-                    <div class="d-flex gap-2 mb-4 flex-wrap" aria-label="Share this article">
-                        <a href="#" class="social-btn"
-                            style="border:1.5px solid var(--border);color:var(--text-muted);width:auto;border-radius:50px;padding:8px 16px;gap:6px;display:flex;align-items:center;"
-                            aria-label="Share on Facebook"><i class="bi bi-facebook"></i> <span>Share</span></a>
-                        <a href="#" class="social-btn"
-                            style="border:1.5px solid var(--border);color:var(--text-muted);width:auto;border-radius:50px;padding:8px 16px;gap:6px;display:flex;align-items:center;"
-                            aria-label="Share on Twitter"><i class="bi bi-twitter-x"></i> <span>Tweet</span></a>
-                        <a href="#" class="social-btn"
-                            style="border:1.5px solid var(--border);color:var(--text-muted);width:auto;border-radius:50px;padding:8px 16px;gap:6px;display:flex;align-items:center;"
-                            aria-label="Copy link"><i class="bi bi-link-45deg"></i> <span>Copy Link</span></a>
-                    </div>
-
                     <!-- Hero image -->
-                    <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=900&q=80"
+                    <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=1200&q=80"
                         alt="First-time kayaker paddling a calm river"
-                        style="width:100%;border-radius:var(--radius);margin-bottom:2rem;box-shadow:var(--shadow);">
+                        style="width:100%;border-radius:var(--radius);margin-bottom:3rem;box-shadow:var(--shadow);">
 
                     <!-- Article body -->
-                    <article style="line-height:1.85;font-size:1.02rem;color:var(--text-muted);">
+                    <article style="line-height:1.85;font-size:1.1rem;color:var(--text-muted);">
                         <p>Getting on the water for the first time is one of life's great thrills. The sound of the
-                            current, the splash of a paddle, the scent of forest air &mdash; kayaking connects us to nature in
-                            a way few activities can match. But before you launch: a little preparation goes a long way.
+                            current, the splash of a paddle, the scent of forest air &mdash; kayaking connects us to
+                            nature in a way few activities can match. But before you launch: a little preparation goes a
+                            long way.
                         </p>
                         <p>After 15 years guiding hundreds of first-timers on Pacific Northwest rivers, I've distilled
                             the most important lessons into 10 tips every beginner should know.</p>
 
-                        <h2 style="font-size:1.5rem;font-weight:800;color:var(--text);margin:2rem 0 1rem;">1. Choose the
+                        <h2 style="font-size:1.8rem;font-weight:800;color:var(--text);margin:2.5rem 0 1.2rem;">1. Choose
+                            the
                             Right Kayak for Your Trip</h2>
-                        <p>Not all kayaks are created equal. Sit-on-top kayaks are ideal for beginners &mdash; they're stable,
-                            self-draining and you can easily remount if you flip. Sit-inside kayaks offer better
+                        <p>Not all kayaks are created equal. Sit-on-top kayaks are ideal for beginners &mdash; they're
+                            stable, self-draining and you can easily remount if you flip. Sit-inside kayaks offer better
                             protection on cold water but require a wet exit technique lesson. At RiverRun, we always
                             recommend a short test float in calm water before tackling moving sections.</p>
 
-                        <div class="pull-quote my-4">
-                            "The best kayak for a beginner is a wide, stable hull in flat water &mdash; save the performance
-                            boats for after you've logged your first 20 hours on the water."
+                        <div class="pull-quote my-5"
+                            style="border-left: 4px solid var(--primary); padding-left: 1.5rem; font-style: italic; font-size: 1.2rem; color: var(--text);">
+                            "The best kayak for a beginner is a wide, stable hull in flat water &mdash; save the
+                            performance boats for after you've logged your first 20 hours on the water."
                         </div>
 
-                        <h2 style="font-size:1.5rem;font-weight:800;color:var(--text);margin:2rem 0 1rem;">2. Master the
+                        <h2 style="font-size:1.8rem;font-weight:800;color:var(--text);margin:2.5rem 0 1.2rem;">2. Master
+                            the
                             Forward Stroke First</h2>
                         <p>Most beginners don't know that power in kayaking comes from your torso, not your arms. Rotate
-                            your entire upper body as you plant each blade deep in the water near your feet &mdash; not beside
-                            your hips. This will instantly make you faster, more efficient and dramatically reduce arm
+                            your entire upper body as you plant each blade deep in the water near your feet &mdash; not
+                            beside your hips. This will instantly make you faster, more efficient and dramatically
+                            reduce arm
                             fatigue.</p>
 
-                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=700&q=80"
-                            alt="Proper kayak forward stroke technique demonstration"
-                            style="width:100%;border-radius:var(--radius);margin:1.5rem 0;box-shadow:var(--shadow);">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1000&q=80"
+                            alt="Proper kayak forward stroke technique"
+                            style="width:100%;border-radius:var(--radius);margin:2.5rem 0;box-shadow:var(--shadow);">
 
-                        <h2 style="font-size:1.5rem;font-weight:800;color:var(--text);margin:2rem 0 1rem;">3. Always
+                        <h2 style="font-size:1.8rem;font-weight:800;color:var(--text);margin:2.5rem 0 1.2rem;">3. Always
                             Wear Your PFD</h2>
                         <p>A personal flotation device (PFD) that stays on a hook in your boat is completely useless if
                             you flip. Wear it. Every. Single. Time. We don't allow anyone on RiverRun trips without a
                             properly fitted, USCG-approved PFD &mdash; and for very good reason.</p>
 
-                        <h2 style="font-size:1.5rem;font-weight:800;color:var(--text);margin:2rem 0 1rem;">4. Learn to
+                        <h2 style="font-size:1.8rem;font-weight:800;color:var(--text);margin:2.5rem 0 1.2rem;">4. Learn
+                            to
                             Read River Current</h2>
                         <p>Rivers have "features" &mdash; eddies, pools, rapids and hazards. An eddy (the calm water
-                            downstream of a rock or bend) is your friend &mdash; it's where you rest and regroup. Current
-                            reads differently depending on depth and width. Start on Class I water to learn how a river
+                            downstream of a rock or bend) is your friend &mdash; it's where you rest and regroup.
+                            Current reads differently depending on depth and width. Start on Class I water to learn how
+                            a river
                             moves before tackling anything faster.</p>
 
-                        <h2 style="font-size:1.5rem;font-weight:800;color:var(--text);margin:2rem 0 1rem;">5. Dress for
-                            the Water, Not the Weather</h2>
-                        <p>Water temperature matters more than air temperature. When Oregon rivers run cold in May-June,
-                            even a brief swim can be dangerous without protection. Our rule: if water + air temp is less
-                            than 120- combined, wear a wet suit. Always dress in quick-dry synthetics &mdash; cotton kills in
-                            cold water.</p>
+                        <img src="https://images.unsplash.com/photo-1499336315816-097655dcfbda?w=1000&q=80"
+                            alt="River safety and rescue practice"
+                            style="width:100%;border-radius:var(--radius);margin:2.5rem 0;box-shadow:var(--shadow);">
 
-                        <h2 style="font-size:1.5rem;font-weight:800;color:var(--text);margin:2rem 0 1rem;">6. Never
-                            Paddle Alone</h2>
-                        <p>River accidents happen fast. Always paddle with at least one other person and file a float
-                            plan with someone at home. On guided trips, you'll always be between a lead guide and a
-                            sweep guide who has eyes on every paddler at all times.</p>
-
-                        <h2 style="font-size:1.5rem;font-weight:800;color:var(--text);margin:2rem 0 1rem;">7. Practice
-                            Wet Exits Before You Need Them</h2>
-                        <p>If you're paddling a sit-inside kayak, a controlled wet exit practice in calm water is
-                            essential BEFORE your trip. Simply tuck forward, pop the skirt, slide out and hold onto your
-                            boat. In warm, shallow water with a buddy nearby, it's almost fun. In cold moving water
-                            unprepared? The opposite.</p>
-
-                        <img src="https://images.unsplash.com/photo-1499336315816-097655dcfbda?w=700&q=80"
-                            alt="River safety and rescue practice calm water"
-                            style="width:100%;border-radius:var(--radius);margin:1.5rem 0;box-shadow:var(--shadow);">
-
-                        <h2 style="font-size:1.5rem;font-weight:800;color:var(--text);margin:2rem 0 1rem;">8. Protect
-                            Your Valuables</h2>
-                        <p>Dry bags are not optional &mdash; they're essential. Your phone, car keys, wallet, and snacks
-                            should always be waterproofed. A 5L dry bag costs $15 and protects everything. Keep it
-                            clipped to your kayak so it doesn't float away if you flip.</p>
-
-                        <h2 style="font-size:1.5rem;font-weight:800;color:var(--text);margin:2rem 0 1rem;">9. Be Honest
-                            About Your Skills</h2>
-                        <p>The biggest mistake beginners make is overestimating their ability. Always pick a route one
-                            difficulty level BELOW what you think you can handle. Class II is far more fun than getting
-                            pinned in Class III unprepared. Skill builds quickly &mdash; your confidence will grow every time
-                            you're on the water.</p>
-
-                        <h2 style="font-size:1.5rem;font-weight:800;color:var(--text);margin:2rem 0 1rem;">10. Take a
-                            Guided Trip First</h2>
-                        <p>There's no better way to learn than with an expert guide. A half-day guided trip will teach
-                            you more about paddling, reading water and river safety than a dozen solo trips. At
-                            RiverRun, our guides are passionate teachers who love helping people fall in love with the
-                            river.</p>
-
-                        <div
-                            style="background:var(--bg-alt);border-radius:var(--radius);padding:2rem;margin-top:2rem;border:1px solid var(--border);">
-                            <h3 style="font-size:1.2rem;font-weight:700;margin-bottom:.8rem;color:var(--text);">Ready to
-                                Try Kayaking?</h3>
-                            <p style="color:var(--text-muted);margin-bottom:1.2rem;">Book a guided trip with RiverRun
-                                Outfitters and learn from certified ACA guides on Oregon's most beautiful rivers.</p>
-                            <a href="booking.html" class="btn-primary-rr">Book Your First Trip <i
-                                    class="bi bi-arrow-right"></i></a>
-                        </div>
+                        <p>Taking a guided trip first is often the best way to accelerate your learning. Certified
+                            instructors can provide real-time feedback that prevents bad habits from forming early on.
+                        </p>
                     </article>
 
-                    <!-- Tags -->
-                    <div class="d-flex gap-2 flex-wrap mt-4">
-                        <span
-                            style="background:var(--bg-alt);border-radius:50px;padding:6px 14px;font-size:.8rem;color:var(--text-muted);">#Beginner</span>
-                        <span
-                            style="background:var(--bg-alt);border-radius:50px;padding:6px 14px;font-size:.8rem;color:var(--text-muted);">#Kayaking</span>
-                        <span
-                            style="background:var(--bg-alt);border-radius:50px;padding:6px 14px;font-size:.8rem;color:var(--text-muted);">#Safety</span>
-                        <span
-                            style="background:var(--bg-alt);border-radius:50px;padding:6px 14px;font-size:.8rem;color:var(--text-muted);">#RiverTips</span>
-                    </div>
-
-                    <!-- Comment Form -->
-                    <div class="mt-5" id="comments">
-                        <h4 style="font-weight:800;margin-bottom:1.5rem;font-family:var(--font-h);">Leave a Comment</h4>
-                        <form style="display:flex;flex-direction:column;gap:1rem;">
-                            <div class="row g-3">
-                                <div class="col-sm-6">
-                                    <label class="form-label-rr" for="commentName">Your Name *</label>
-                                    <input type="text" id="commentName" class="form-control-rr" placeholder="John Smith"
-                                        required>
-                                </div>
-                                <div class="col-sm-6">
-                                    <label class="form-label-rr" for="commentEmail">Email *</label>
-                                    <input type="email" id="commentEmail" class="form-control-rr"
-                                        placeholder="john@email.com" required>
-                                </div>
-                            </div>
-                            <div>
-                                <label class="form-label-rr" for="commentText">Comment *</label>
-                                <textarea id="commentText" class="form-control-rr" rows="5"
-                                    placeholder="Share your thoughts or questions... required
-                                    style="resize:vertical;"></textarea>
-                            </div>
-                            <div>
-                                <button type="submit" class="btn-primary-rr">Post Comment <i
-                                        class="bi bi-arrow-right"></i></button>
-                            </div>
-                        </form>
+                    <!-- Share buttons -->
+                    <div class="d-flex justify-content-center gap-3 mt-5 pt-4 border-top"
+                        aria-label="Share this article">
+                        <span class="align-self-center fw-bold me-2">Share:</span>
+                        <a href="#" class="social-btn"
+                            style="border:1.5px solid var(--border);color:var(--text-muted);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;"
+                            aria-label="Share on Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-btn"
+                            style="border:1.5px solid var(--border);color:var(--text-muted);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;"
+                            aria-label="Share on Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-btn"
+                            style="border:1.5px solid var(--border);color:var(--text-muted);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;"
+                            aria-label="Copy link"><i class="bi bi-link-45deg"></i></a>
                     </div>
                 </main>
-
-                <!-- Sidebar -->
-                <aside class="col-lg-4">
-                    <!-- Author -->
-                    <div class="card-rr p-4 mb-4 text-center">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&q=80"
-                            alt="Marcus Webb"
-                            style="width:80px;height:80px;border-radius:50%;object-fit:cover;border:3px solid var(--primary);margin:0 auto 1rem;">
-                        <h6 style="font-weight:700;">Marcus Webb</h6>
-                        <div style="color:var(--accent);font-size:.82rem;font-weight:600;margin-bottom:.6rem;">Head
-                            River Guide &amp; Co-Founder</div>
-                        <p style="color:var(--text-muted);font-size:.85rem;">ACA Level 4 certified. 15 years guiding
-                            adventures on Pacific Northwest rivers.</p>
-                    </div>
-
-                    <!-- Recent Posts -->
-                    <div class="card-rr p-4 mb-4">
-                        <h6 style="font-weight:700;margin-bottom:1rem;font-family:var(--font-h);">Recent Articles</h6>
-                        <div class="d-flex gap-3 align-items-start mb-3">
-                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=80&q=70"
-                                alt="River safety"
-                                style="width:60px;height:52px;border-radius:var(--radius-sm);object-fit:cover;flex-shrink:0;">
-                            <div>
-                                <a href="blog-details.html"
-                                    style="font-size:.87rem;font-weight:600;line-height:1.3;">River Safety Rules That
-                                    Could Save Your Life</a>
-                                <div style="font-size:.78rem;color:var(--text-muted);margin-top:3px;">Apr 22, 2026</div>
-                            </div>
-                        </div>
-                        <div class="d-flex gap-3 align-items-start mb-3">
-                            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=80&q=70"
-                                alt="Kayaking gear"
-                                style="width:60px;height:52px;border-radius:var(--radius-sm);object-fit:cover;flex-shrink:0;">
-                            <div>
-                                <a href="blog-details.html"
-                                    style="font-size:.87rem;font-weight:600;line-height:1.3;">Best Kayaking Gear of
-                                    2026</a>
-                                <div style="font-size:.78rem;color:var(--text-muted);margin-top:3px;">Apr 15, 2026</div>
-                            </div>
-                        </div>
-                        <div class="d-flex gap-3 align-items-start">
-                            <img src="https://images.unsplash.com/photo-1472745942893-4b9f730c7668?w=80&q=70"
-                                alt="Family river trip"
-                                style="width:60px;height:52px;border-radius:var(--radius-sm);object-fit:cover;flex-shrink:0;">
-                            <div>
-                                <a href="blog-details.html"
-                                    style="font-size:.87rem;font-weight:600;line-height:1.3;">Planning the Perfect
-                                    Family River Trip</a>
-                                <div style="font-size:.78rem;color:var(--text-muted);margin-top:3px;">Apr 8, 2026</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Categories -->
-                    <div class="card-rr p-4 mb-4">
-                        <h6 style="font-weight:700;margin-bottom:1rem;font-family:var(--font-h);">Categories</h6>
-                        <div class="d-flex flex-column gap-2">
-                            <a href="blog.html" class="d-flex justify-content-between"
-                                style="color:var(--text-muted);font-size:.9rem;padding:6px 0;border-bottom:1px solid var(--border);">
-                                <span><i class="bi bi-shield-check me-2 text-primary-rr"></i>Safety Tips</span><span
-                                    style="background:var(--primary);color:#fff;border-radius:50px;padding:2px 10px;font-size:.75rem;">4</span>
-                            </a>
-                            <a href="blog.html" class="d-flex justify-content-between"
-                                style="color:var(--text-muted);font-size:.9rem;padding:6px 0;border-bottom:1px solid var(--border);">
-                                <span><i class="bi bi-water me-2 text-primary-rr"></i>Beginner Guides</span><span
-                                    style="background:var(--primary);color:#fff;border-radius:50px;padding:2px 10px;font-size:.75rem;">6</span>
-                            </a>
-                            <a href="blog.html" class="d-flex justify-content-between"
-                                style="color:var(--text-muted);font-size:.9rem;padding:6px 0;border-bottom:1px solid var(--border);">
-                                <span><i class="bi bi-gear me-2 text-primary-rr"></i>Gear Reviews</span><span
-                                    style="background:var(--accent);color:#fff;border-radius:50px;padding:2px 10px;font-size:.75rem;">3</span>
-                            </a>
-                            <a href="blog.html" class="d-flex justify-content-between"
-                                style="color:var(--text-muted);font-size:.9rem;padding:6px 0;border-bottom:1px solid var(--border);">
-                                <span><i class="bi bi-people me-2 text-primary-rr"></i>Family Adventures</span><span
-                                    style="background:var(--primary);color:#fff;border-radius:50px;padding:2px 10px;font-size:.75rem;">5</span>
-                            </a>
-                            <a href="blog.html" class="d-flex justify-content-between"
-                                style="color:var(--text-muted);font-size:.9rem;padding:6px 0;">
-                                <span><i class="bi bi-calendar3 me-2 text-primary-rr"></i>Seasonal Guides</span><span
-                                    style="background:var(--secondary-light);color:#fff;border-radius:50px;padding:2px 10px;font-size:.75rem;">4</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Newsletter -->
-                    <div class="card-rr p-4" style="background:var(--grad-primary);">
-                        <h6 style="font-weight:700;margin-bottom:.6rem;color:#fff;font-family:var(--font-h);">Get River
-                            Tips Weekly</h6>
-                        <p style="color:rgba(255,255,255,.8);font-size:.85rem;margin-bottom:1rem;">Join 2,400+ paddlers
-                            who receive our weekly river conditions and adventure tips.</p>
-                        <form class="d-flex flex-column gap-2" aria-label="Sidebar newsletter">
-                            <input type="email" class="form-control-rr" placeholder="Your email address"
-                                aria-label="Email address" required>
-                            <button class="newsletter-btn" type="submit">Subscribe Free</button>
-                        </form>
-                    </div>
-                </aside>
             </div>
+        </div>
+    </section>
 
-            <!-- Related Posts -->
-            <div class="mt-5 pt-4">
-                <h4 style="font-weight:800;margin-bottom:1.5rem;font-family:var(--font-h);">Related Articles</h4>
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <article class="blog-card">
-                            <div class="blog-card-img">
-                                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=75"
-                                    alt="River safety">
-                                <span class="blog-cat-badge">Safety</span>
-                            </div>
-                            <div class="blog-card-body">
-                                <div class="blog-meta"><span><i class="bi bi-clock"></i> 6 min read</span></div>
-                                <h5>River Safety Rules That Could Save Your Life</h5>
-                                <a href="blog-details.html" class="blog-read-more">Read More <i
-                                        class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-4">
-                        <article class="blog-card">
-                            <div class="blog-card-img">
-                                <img src="https://images.unsplash.com/photo-1472745942893-4b9f730c7668?w=400&q=75"
-                                    alt="Family river trip">
-                                <span class="blog-cat-badge">Family</span>
-                            </div>
-                            <div class="blog-card-body">
-                                <div class="blog-meta"><span><i class="bi bi-clock"></i> 7 min read</span></div>
-                                <h5>Planning the Perfect Family River Trip with Kids</h5>
-                                <a href="blog-details.html" class="blog-read-more">Read More <i
-                                        class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-4">
-                        <article class="blog-card">
-                            <div class="blog-card-img">
-                                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&q=75"
-                                    alt="Kayak vs canoe">
-                                <span class="blog-cat-badge">Beginner</span>
-                            </div>
-                            <div class="blog-card-body">
-                                <div class="blog-meta"><span><i class="bi bi-clock"></i> 9 min read</span></div>
-                                <h5>Kayak vs. Canoe &mdash; Which Is Right for You?</h5>
-                                <a href="blog-details.html" class="blog-read-more">Read More <i
-                                        class="bi bi-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
+    <!-- SECTION 3: RELATED ARTICLES -->
+    <section class="section-pad bg-alt" aria-label="Related articles">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 style="font-weight:800;font-family:var(--font-h);">You Might Also Like</h2>
+                <p style="color:var(--text-muted);">Expand your knowledge with our latest river guides.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-4">
+                    <article class="blog-card card-rr h-100 border-0 shadow-sm">
+                        <div class="blog-card-img" style="aspect-ratio: 16/9; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=75"
+                                alt="River safety" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div class="blog-card-body p-4 text-center">
+                            <span class="blog-cat-badge mb-2 d-inline-block">Safety</span>
+                            <h5 class="fw-bold">River Safety Rules That Could Save Your Life</h5>
+                            <a href="blog-details.html"
+                                class="blog-read-more text-primary text-decoration-none fw-bold small mt-2 d-block">Read
+                                Article <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="blog-card card-rr h-100 border-0 shadow-sm">
+                        <div class="blog-card-img" style="aspect-ratio: 16/9; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1472745942893-4b9f730c7668?w=400&q=75"
+                                alt="Family river trip" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div class="blog-card-body p-4 text-center">
+                            <span class="blog-cat-badge mb-2 d-inline-block">Family</span>
+                            <h5 class="fw-bold">Planning the Perfect Family River Trip with Kids</h5>
+                            <a href="blog-details.html"
+                                class="blog-read-more text-primary text-decoration-none fw-bold small mt-2 d-block">Read
+                                Article <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <article class="blog-card card-rr h-100 border-0 shadow-sm">
+                        <div class="blog-card-img" style="aspect-ratio: 16/9; overflow: hidden;">
+                            <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&q=75"
+                                alt="Kayak vs canoe" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                        <div class="blog-card-body p-4 text-center">
+                            <span class="blog-cat-badge mb-2 d-inline-block">Beginner</span>
+                            <h5 class="fw-bold">Kayak vs. Canoe &mdash; Which Is Right for You?</h5>
+                            <a href="blog-details.html"
+                                class="blog-read-more text-primary text-decoration-none fw-bold small mt-2 d-block">Read
+                                Article <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
                 </div>
             </div>
         </div>
@@ -540,11 +375,10 @@
             </div>
         </div>
     </footer>
+
     <button id="backToTop" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
 </html>
-
-
