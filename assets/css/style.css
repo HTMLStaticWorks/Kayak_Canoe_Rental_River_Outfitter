@@ -51,15 +51,15 @@
 
 /* ── Dark Mode Variables ──────────────────────────────── */
 [data-theme="dark"] {
-    --bg: #0b1120;
-    --bg-alt: #0f172a;
-    --bg-card: #1e293b;
+    --bg: #000000;
+    --bg-alt: #121212;
+    --bg-card: #1c1c1e;
     --text: #f1f5f9;
     --text-muted: #94a3b8;
     --text-light: #64748b;
-    --border: #334155;
-    --shadow: 0 4px 24px rgba(0, 0, 0, .40);
-    --shadow-lg: 0 8px 48px rgba(0, 0, 0, .60);
+    --border: #262626;
+    --shadow: 0 4px 24px rgba(0, 0, 0, .60);
+    --shadow-lg: 0 8px 48px rgba(0, 0, 0, .80);
     --grad-hero: linear-gradient(160deg, #0e749099 0%, #14532d99 100%);
 }
 
@@ -96,7 +96,7 @@ h6 {
     font-family: var(--font-h);
     color: var(--text);
     line-height: 1.25;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 a {
@@ -192,7 +192,7 @@ ul {
     background: rgba(14, 116, 144, .12);
     color: var(--primary);
     font-size: .8rem;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: .12em;
     text-transform: uppercase;
     padding: 6px 16px;
@@ -206,7 +206,7 @@ ul {
 
 .section-title {
     font-size: clamp(1.8rem, 4vw, 2.8rem);
-    font-weight: 800;
+    font-weight: 500;
     margin-bottom: 1rem;
 }
 
@@ -354,7 +354,7 @@ ul {
 }
 
 [data-theme="dark"] .glass {
-    background: rgba(15, 23, 42, .55);
+    background: rgba(18, 18, 18, .55);
     border-color: rgba(255, 255, 255, .08);
 }
 
@@ -404,7 +404,7 @@ ul {
 }
 
 [data-theme="dark"] .navbar-rr.scrolled {
-    background: rgba(11, 17, 32, .92);
+    background: rgba(0, 0, 0, .92);
 }
 
 .navbar-rr.scrolled .nav-logo-text {
@@ -761,7 +761,7 @@ ul {
     backdrop-filter: blur(10px);
     color: #fff;
     font-size: .8rem;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: .12em;
     text-transform: uppercase;
     padding: 6px 18px;
@@ -773,7 +773,7 @@ ul {
 .hero-title {
     font-family: var(--font-h);
     font-size: clamp(2.4rem, 6vw, 4.5rem);
-    font-weight: 900;
+    font-weight: 500;
     color: #fff;
     line-height: 1.1;
     margin-bottom: 1.2rem;
@@ -890,7 +890,7 @@ ul {
 
 .page-hero-title {
     font-size: clamp(2rem, 4vw, 3.2rem);
-    font-weight: 800;
+    font-weight: 500;
     color: #fff;
 }
 
@@ -980,7 +980,7 @@ ul {
 
 .service-card h4 {
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: .5rem;
 }
 
@@ -1120,7 +1120,7 @@ ul {
 }
 
 .reviewer-name {
-    font-weight: 700;
+    font-weight: 500;
     font-size: .95rem;
 }
 
@@ -1163,7 +1163,7 @@ ul {
     background: var(--accent);
     color: #fff;
     font-size: .75rem;
-    font-weight: 700;
+    font-weight: 500;
     padding: 4px 20px;
     border-radius: 50px;
     letter-spacing: .08em;
@@ -1363,7 +1363,7 @@ ul {
     background: var(--primary);
     color: #fff;
     font-size: .72rem;
-    font-weight: 700;
+    font-weight: 500;
     padding: 4px 14px;
     border-radius: 50px;
     text-transform: uppercase;
@@ -1392,7 +1392,7 @@ ul {
 
 .blog-card-body h5 {
     font-size: 1.1rem;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: .6rem;
     line-height: 1.4;
 }
@@ -1404,7 +1404,7 @@ ul {
 
 .blog-read-more {
     color: var(--primary);
-    font-weight: 600;
+    font-weight: 500;
     font-size: .9rem;
     display: inline-flex;
     align-items: center;
@@ -1431,7 +1431,7 @@ ul {
 
 .form-label-rr {
     font-family: var(--font-h);
-    font-weight: 600;
+    font-weight: 500;
     font-size: .88rem;
     color: var(--text);
     margin-bottom: .4rem;
@@ -1492,7 +1492,7 @@ ul {
     justify-content: space-between;
     align-items: center;
     padding: 14px 0 0;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.1rem;
     color: var(--primary);
 }
@@ -1558,7 +1558,7 @@ ul {
     cursor: pointer;
     background: var(--bg-card);
     font-family: var(--font-h);
-    font-weight: 600;
+    font-weight: 500;
     font-size: .97rem;
     transition: var(--trans);
     gap: 16px;
@@ -1641,7 +1641,7 @@ ul {
 
 .footer-col-title {
     font-family: var(--font-h);
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1rem;
     color: #fff;
     margin-bottom: 1.2rem;
@@ -1915,12 +1915,12 @@ ul {
 
 .auth-card {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .auth-card h2 {
     font-size: 2rem;
-    font-weight: 800;
+    font-weight: 500;
     margin-bottom: .4rem;
 }
 
@@ -2322,7 +2322,7 @@ ul {
 .team-role {
     color: var(--accent);
     font-size: .85rem;
-    font-weight: 600;
+    font-weight: 500;
     text-transform: uppercase;
     letter-spacing: .08em;
 }
@@ -2371,7 +2371,7 @@ ul {
     position: relative;
     z-index: 2;
     width: 100%;
-    max-width: 480px;
+    max-width: 540px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2448,9 +2448,9 @@ ul {
     white-space: nowrap !important;
     min-width: 0;
     overflow: hidden;
-    gap: 6px;
-    padding: 10px 8px !important;
-    font-size: .82rem !important;
+    gap: 8px;
+    padding: 12px 24px !important;
+    font-size: .88rem !important;
 }
 
 .auth-card .d-flex.flex-row .btn-outline-rr svg,
@@ -2510,7 +2510,7 @@ ul {
 }
 
 .contact-info-card h6 {
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: .5rem;
     font-family: var(--font-h);
 }
@@ -2524,7 +2524,7 @@ ul {
 
 .contact-info-card a {
     color: var(--primary);
-    font-weight: 600;
+    font-weight: 550;
 }
 
 /* ============================================================
@@ -2551,4 +2551,18 @@ ul {
 #waiverCheck:checked~div #bookSubmitBtn,
 #waiverCheck:checked+label~button {
     opacity: 1;
+}
+
+/* ============================================================
+   GLOBAL TYPOGRAPHY RULES (ENFORCED LIMITS)
+   ============================================================ */
+/* Headings must strictly be below 600 weight (e.g. 500) */
+h1, h2, h3, h4, h5, h6,
+.hero-title, .section-title, .page-hero-title, .auth-card h2, .service-card h4, .blog-card-body h5, .contact-info-card h6 {
+    font-weight: 500 !important;
+}
+
+/* Paragraphs & subheadings must strictly be between 400 and 550 weight (inclusive) */
+p, .section-sub, .hero-sub, .section-tag, .hero-tag, .reviewer-name, .pricing-badge, .blog-cat-badge, .form-label-rr, .faq-question, .team-role, .contact-info-card a, .blog-read-more {
+    font-weight: 500 !important;
 }
